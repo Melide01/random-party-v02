@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <meta charset="utf-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="custom-buttons.css"/>
+    <script defer src="random-items.js"></script>
+    <script defer src="script.js" data-file-name="random-event.html"></script>
+  </head>
+  <body>
+    <div class="menu-bar" id="menu-bar">
+      
+      <img class="icon" id="icon" src="assets/icon-black.png" onclick="backHome()">
+      
+    </div>
+    <br><br>
+    <h2>Random Event!</h2>
+    
+    <div class="index-display-display" id="index-display-display">
+      <p class="index-display">#</p>
+      <p class="index-display" id="index-display"></p>
+    </div>
+    
+      
+    
+    <div class="RandomCONTAINER">
+      <div class="display-random" id="display-random">
+      </div>
+    </div>
+    
+    
+    <div id="quote-display" class="quote-display">
+      <p id="paper-note" class="paper-note">
+        
+      </p>
+    </div>
+    
+    
+    
+    <div id="random-button-div" class="random-button-div">
+      <a onclick="createRandomItem()">Random</a>
+    </div>
+    
+    
+    
+  </body>
+</html>
