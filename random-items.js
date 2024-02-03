@@ -8,9 +8,9 @@ var randomItems = [
 ];
 
 var randomQuotes = {
-  0: 'Appuie en haut pour continuer',
-  2: 'Petit chat <3',
-  3: 'La premiere fois que je tai vu, jai eu envie de te prendre le coeur, ca a ete un grand bonheur, et ca rentrais comme dans une histoire, histoire damour qui glisse qui rippe, toi amoureuse me ferait une bonne chanson, ca glisse comme la pluie qui mouille, allez attrape moi les mains'
+  1: 'Appuie en haut pour continuer',
+  3: 'Petit chat <3',
+  4: 'La premiere fois que je tai vu, jai eu envie de te prendre le coeur, ca a ete un grand bonheur, et ca rentrais comme dans une histoire, histoire damour qui glisse qui rippe, toi amoureuse me ferait une bonne chanson, ca glisse comme la pluie qui mouille, allez attrape moi les mains'
 }
 
 var indexExplication = [
