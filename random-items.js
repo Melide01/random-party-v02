@@ -1,4 +1,5 @@
 var randomItems = [
+  '<a id="items" data-event="none">Pain elle est magnifique</a>',
   '<a id="items" data-event="hide" onclick="createRandomItem()">Clique ici</a>',
   '<button id="items" class="btn" data-event="none">Appuie sur le bouton</button>',
   '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
