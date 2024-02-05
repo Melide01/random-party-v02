@@ -3,6 +3,8 @@ let prevScrollPos = window.pageYOffset;
 // Settings Vars
 var srcDirectory = "assets/";
 var buttonColor = "#5c61b2";
+var RarityColor = [0xFFce00, 0xFFFFFF]
+var colorExpPow = 2;
 
 
 
@@ -10,6 +12,35 @@ var scriptElement = document.currentScript;
 var fileName = scriptElement.getAttribute('data-file-name');
 
 var isPageSwitch = false;
+
+// Important functions
+function LerpColor(color1, color2, t, exp) {
+  t = Math.pow(t, exp);
+
+  // Extract color components
+  const r1 = color1 >> 16 & 255;
+  const g1 = color1 >> 8 & 255;
+  const b1 = color1 & 255;
+  const a1 = color1 >>> 24;
+
+  const r2 = color2 >> 16 & 255;
+  const g2 = color2 >> 8 & 255;
+  const b2 = color2 & 255;
+  const a2 = color2 >>> 24;
+
+  // Interpolate color components
+  const r = Math.round(r1 + t * (r2 - r1));
+  const g = Math.round(g1 + t * (g2 - g1));
+  const b = Math.round(b1 + t * (b2 - b1));
+  const a = Math.round(a1 + t * (a2 - a1));
+
+  // Combine interpolated components into a new color
+  return (a << 24) | (r << 16) | (g << 8) | b;
+}
+
+
+
+
 
 // Open Pages Functions
 function backHome() {
@@ -133,7 +164,14 @@ function isHTMLElement(text) {
 
 var lastRandom = 0;
 
-function createRandomItem() {
+function createRandomItem(index) {
+  var normSpecialSlider = (randomItems.length - 1) / 100;
+  // Random Var
+  var randomIndex = Math.floor(Math.random() * randomItems.length);
+  if (index !== undefined) {
+    randomIndex = Math.round(index);
+  }
+
   // Do not touch Vars
   var itemsDataEvent = "none";
   var display = document.getElementById('display-random')
@@ -141,9 +179,15 @@ function createRandomItem() {
   document.getElementById("display-random").style.minHeight = "10px";
   display.innerHTML = '';
   
-  
   // Animates the Rarity Number
   document.getElementById("index-display-display").style.opacity = .3;
+
+  const numberRandomDisplay = document.getElementsByClassName('index-display');
+
+  var rareColor = LerpColor(RarityColor[0], RarityColor[1], randomIndex / (randomItems.length - 1), colorExpPow);
+  numberRandomDisplay[0].style.color = "#" + rareColor.toString(16);
+  numberRandomDisplay[1].style.color = "#" + rareColor.toString(16);
+
   document.getElementById("index-display").textContent = '?';
   setTimeout(function() {
     document.getElementById("index-display").textContent = '??';
@@ -154,8 +198,7 @@ function createRandomItem() {
   
   
   
-  // Random Var
-  var randomIndex = Math.floor(Math.random() * randomItems.length);
+  
   
   
   
@@ -216,6 +259,27 @@ function createRandomItem() {
     document.getElementById("random-button-div").style.display = "flex";
   }
   
+
+  // experiments slider 
+  if (document.getElementById('items').dataset.type !== null) {
+    if (document.getElementById('items').dataset.type === "slider") { 
+      // Sliders Scripts
+      const slider = document.getElementById('items');
+      var sliderValue = 0;
+
+      slider.addEventListener('input', function() {
+        sliderValue = slider.value;
+      });
+
+      slider.addEventListener('change', function() {
+        createRandomItem(normSpecialSlider * sliderValue);
+      })
+    }
+  }
+
+
+
+
   
   // Finalize Display
   setTimeout(function() {
@@ -229,6 +293,7 @@ function createRandomItem() {
   
   
 }
+
 
 
 
@@ -300,11 +365,3 @@ window.onscroll = function() {
 window.onload = function() {
   updateCurrentPage()
 }
-
-
-
-
-
-
-
-
