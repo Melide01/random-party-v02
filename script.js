@@ -1,7 +1,7 @@
 let prevScrollPos = window.pageYOffset;
 
 // Settings Vars
-var srcDirectory = "assets/";
+var srcDirectory = "RandomFolder/";
 var buttonColor = "#5c61b2";
 var RarityColor = [0xFFce00, 0xFFFFFF]
 var colorExpPow = 2;
@@ -227,7 +227,7 @@ function createRandomItem(index) {
     if (/img_/.test(element) ) {
       var imgElement = document.createElement('img');
       var patternRemoved = element.replace("img_", "");
-      imgElement.src = srcDirectory + patternRemoved;
+      imgElement.src = srcDirectory + "images/" + patternRemoved;
       imgElement.id = 'items';
       imgElement.setAttribute('data-event', 'none');
       display.appendChild(imgElement);
@@ -235,7 +235,7 @@ function createRandomItem(index) {
     } else if (/vid_/.test(element) ) {
       var vidElement = document.createElement('video');
       var patternRemoved = element.replace("vid_", "");
-      vidElement.src = srcDirectory + patternRemoved;
+      vidElement.src = srcDirectory + "videos/" + patternRemoved;
       vidElement.id = 'items';
       vidElement.controls = true;
       vidElement.setAttribute('data-event', 'none');
