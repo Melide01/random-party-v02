@@ -64,6 +64,7 @@ var randomItems = [
   'img_milk-pref.jpg',
   'img_mini-john.jpg',
   'img_pipopipo.JPG',
+  'img_spleef.PNG',
   'img_spotify-banner.PNG',
   'img_t-douce.jpg',
   'img_t-trop-cute.JPG',
