@@ -52,7 +52,25 @@ var randomItems = [
   'img_proj-t0.JPG',
   'img_puatoro.png',
   'img_random-beau.jpg',
-  'img_releve-bancaire.JPG'
+  'img_releve-bancaire.JPG',
+
+  'img_cool-art.jpg',
+  'img_crescent-melide.PNG',
+  'img_euh.PNG',
+  'img_euuh.JPG',
+  'img_game-dev-ios.JPG',
+  'img_game-render.JPG',
+  'img_lapin.JPG',
+  'img_milk-pref.jpg',
+  'img_mini-john.jpg',
+  'img_pipopipo.JPG',
+  'img_spotify-banner.PNG',
+  'img_t-douce.jpg',
+  'img_t-trop-cute.JPG',
+  'img_uwu-model.JPG',
+  'img_wip-demons.jpg',
+  'img_wip-ttd.PNG',
+  'img_yoda-zach.JPG'
 ];
 
 var randomQuotes = {};
