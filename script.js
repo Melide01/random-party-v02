@@ -81,9 +81,6 @@ function updateCurrentPage() {
     var randomAD = Math.floor(Math.random() * ads.length);
 
     var newAD = adSRC + ads[randomAD];
-
-    console.log(ads[randomAD]);
-    console.log(randomAD);
     var newImg = document.createElement("img");
     newImg.src = newAD;
     document.getElementById("ad-banner").appendChild(newImg);
@@ -214,8 +211,11 @@ function createRandomItem(index) {
   var itemsDataEvent = "none";
   var display = document.getElementById('display-random')
   
+  // Reset and free the display
   document.getElementById("display-random").style.minHeight = "10px";
-  display.innerHTML = '';
+  while (display.firstChild) {
+    display.removeChild(display.firstChild);
+  }
   
   // Animates the Rarity Number
   document.getElementById("index-display-display").style.opacity = .3;
