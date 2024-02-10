@@ -1,4 +1,5 @@
 let prevScrollPos = window.pageYOffset;
+var specialGift = 1;
 
 // Settings Vars
 var srcDirectory = "RandomFolder/";
@@ -6,11 +7,9 @@ var buttonColor = "#5c61b2";
 var RarityColor = [0xFFce00, 0xFFFFFF]
 var colorExpPow = 2;
 
-
-
+// Don't touch vars
 var scriptElement = document.currentScript;
 var fileName = scriptElement.getAttribute('data-file-name');
-
 var isPageSwitch = false;
 
 // Important functions
@@ -64,13 +63,52 @@ function updateCurrentPage() {
     document.body.style.backgroundImage = 'url("assets/birthday-sparkle-darken.gif")';
     document.body.style.backgroundColor = '#000';
     document.getElementById("menu-bar").style.backgroundColor = "#333";
+
+    if (sessionStorage.getItem("specialGift") !== null) {
+      specialGift = sessionStorage.getItem("specialGift");
+    }
+    if (specialGift == 1) {
+      document.getElementById("specialGift").style.display = "none";
+    } else {
+      document.getElementById("specialGift").style.display = "flex";
+    }
     
   }
   
   if (fileName == "index.html") {
     changeIndexPage(0)
+    var adSRC = "assets/ads/";
+    var randomAD = Math.floor(Math.random() * ads.length);
+
+    var newAD = adSRC + ads[randomAD];
+
+    console.log(ads[randomAD]);
+    console.log(randomAD);
+    var newImg = document.createElement("img");
+    newImg.src = newAD;
+    document.getElementById("ad-banner").appendChild(newImg);
+
+    if (randomAD == 0) {
+      newImg.style.cursor = "pointer";
+      newImg.addEventListener("click", function() {
+        window.open('melide-corp.html', '_self');
+      });
+    };
+
+    var closeButton = document.getElementById("ad-close-btn");
+
+    closeButton.addEventListener("click", function() {
+      alert("Google ne veux pas que tu fermes cette pub.");
+    });
+
+
+
+
   }
   
+
+
+
   if (fileName == "socials.html") {
     document.getElementById("menu-bar").style.backgroundColor = "#e8d659";
   }

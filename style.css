@@ -19,6 +19,23 @@ body, html {
 }
 
 
+
+
+
+
+.specialGift {
+  display: none; 
+  width: 50%; 
+  margin-left: 25%; margin-top: 20px;
+  justify-content: center;
+}
+
+
+
+
+
+
+
 .artwork {
   width: 100%; object-fit: cover; object-position: center;
 }
