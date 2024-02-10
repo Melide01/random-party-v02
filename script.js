@@ -284,7 +284,7 @@ function createRandomItem(index) {
   // Finalize Display
   setTimeout(function() {
     document.getElementById("display-random").style.minHeight = "200px";
-    document.getElementById("index-display").textContent = randomIndex +1;
+    document.getElementById("index-display").textContent = randomIndex +1 + " / " + randomItems.length;
     document.getElementById("index-display-display").style.opacity = 1;
     
     document.getElementById("items").style.display = 'block';
