@@ -1,9 +1,119 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=320, initial-scale=1">
+        <meta charset="utf-8">
+        <style>
+            body, html {
+                min-width: 100%; min-height: 100%; 
+                margin: 0; padding: 0;
+                font: Arial 14px;
+                color: #001;
+            }
 
+            #temp-logo {
+                margin-left: 10px;
+            }
+
+            .top-banner {
+                width: 100%; height: 50px; display: flex;
+                background-color: #223; color: #eee;
+                padding-right: 10px; padding-top: 10px;
+            }
+
+            .log-in {
+                display: flex; align-items: center;
+                position: absolute; right: -200px;
+            }
+
+            .log-in input {
+                height: 50%; width: 10%; margin-left: 10px; margin-right: 10px;
+            }
+
+            .holder {
+                width: 100%; height: 30vh; overflow: hidden; object-fit: cover;  
+            }
+        </style>
+        <script defer src="script.js" data-file-name="melide-corp.html"></script>
     </head>
     <body>
-        Hello there
+        <div class="top-banner">
+            <p id="temp-logo">melide corporation</p>
+
+            <div class="log-in" id="log-in">
+                <p>Username:</p>
+                <input type="text" id="username">
+                <p>Password:</p>
+                <input type="text" id="password">
+                <button id="connect-btn" onclick="checkUser()">Log In</button>
+            </div>
+        </div>
+
+        <img src="assets/gentle-mens.jpg" class="holder" id="holder">
+        <h1>We ensure your safety.</h1>
+        <p>Working at Melide Corporation is a huge tasks. </p>
+
+
+
+
+
+
+
+
+        <script>
+            var test = document.getElementById('holder');
+            var key = {
+                'admin': 'admin',
+                'john': 'hola'
+            }
+
+            var username = "none";
+            var password = "none";
+
+            function checkLogin() {
+                if (localeStorage.getItem("specialGift") !== 1) {
+                    loggedIn();
+                }
+            }
+
+            function checkUser() {
+                username = document.getElementById('username').value;
+                password = document.getElementById('password').value;
+                if (key[username] !== undefined) {
+                    if (key[username] == password) {
+                        alert("You're now logged in!");
+                        loggedIn();
+                    } else {
+                        alert("Wrong password");
+                    }
+                }
+            }
+
+            function loggedIn() {
+                localeStorage.setItem("specialGift", 0);
+                var logDisplay = document.getElementById("log-in");
+
+                document.getElementById("log-in").innerHTML = "";
+                document.getElementById("log-in").textContent = "Welcome " + username + "!!";
+                document.getElementById("log-in").style.right = "10px";
+
+                logDisplay.addEventListener("click", function() {
+                    localeStorage.setItem("specialGift", 1);
+                    console.log("lala")
+                });
+            }
+
+            function hideLogoOrNot() {
+                if (window.innerWidth > 550) {
+                    document.getElementById('temp-logo').style.display = "block";
+                } else {
+                    document.getElementById('temp-logo').style.display = "none";
+                }
+            }
+
+            window.addEventListener("resize", function() {
+                hideLogoOrNot()
+            });
+        </script>
     </body>
 </html>

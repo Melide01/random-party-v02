@@ -64,17 +64,21 @@ function updateCurrentPage() {
     document.body.style.backgroundColor = '#000';
     document.getElementById("menu-bar").style.backgroundColor = "#333";
 
-    if (sessionStorage.getItem("specialGift") !== null) {
-      specialGift = sessionStorage.getItem("specialGift");
+    if (localeStorage.getItem("specialGift") !== null) {
+      specialGift = localeStorage.getItem("specialGift");
     }
     if (specialGift == 1) {
       document.getElementById("specialGift").style.display = "none";
     } else {
       document.getElementById("specialGift").style.display = "flex";
-    }
-    
+    };
   }
   
+  if (fileName == "melide-corp.html") {
+    hideLogoOrNot();
+    checkLogin();
+  }
+
   if (fileName == "index.html") {
     changeIndexPage(0)
     var adSRC = "assets/ads/";
@@ -97,10 +101,6 @@ function updateCurrentPage() {
     closeButton.addEventListener("click", function() {
       alert("Google ne veux pas que tu fermes cette pub.");
     });
-
-
-
-
   }
   
 
@@ -111,7 +111,8 @@ function updateCurrentPage() {
   }
   
   if (fileName == "random-event.html") {
-    createRandomItem()
+    createRandomItem();
+    console.log(localeStorage.getItem(specialGift));
   }
   
   
