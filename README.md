@@ -1,2 +1,2 @@
 # random-party-v02
-Nouvelle/Dernière Random Party ??
+Si tu es ici c'est probablement que tu triches (⌐■_■)︻╦╤─ (╥﹏╥)
