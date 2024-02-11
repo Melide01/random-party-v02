@@ -59,13 +59,19 @@ function openRandomEvent() {
 }
 
 function updateCurrentPage() {
+  if (sessionStorage.getItem("specialGift") !== null) {
+    specialGift = sessionStorage.getItem("specialGift");
+    console.log("has set: " + sessionStorage.getItem("specialGift"));
+  }
+  
+
   if (fileName == "random-event.html") {
     document.body.style.backgroundImage = 'url("assets/birthday-sparkle-darken.gif")';
     document.body.style.backgroundColor = '#000';
     document.getElementById("menu-bar").style.backgroundColor = "#333";
 
-    if (localeStorage.getItem("specialGift") !== null) {
-      specialGift = localeStorage.getItem("specialGift");
+    if (sessionStorage.getItem("specialGift") !== null) {
+      specialGift = sessionStorage.getItem("specialGift");
     }
     if (specialGift == 1) {
       document.getElementById("specialGift").style.display = "none";
@@ -77,6 +83,7 @@ function updateCurrentPage() {
   if (fileName == "melide-corp.html") {
     hideLogoOrNot();
     checkLogin();
+    console.log(sessionStorage.getItem("specialGift"));
   }
 
   if (fileName == "index.html") {
@@ -112,7 +119,6 @@ function updateCurrentPage() {
   
   if (fileName == "random-event.html") {
     createRandomItem();
-    console.log(localeStorage.getItem(specialGift));
   }
   
   

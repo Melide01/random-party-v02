@@ -71,7 +71,7 @@
             var password = "none";
 
             function checkLogin() {
-                if (localeStorage.getItem("specialGift") !== 1) {
+                if (sessionStorage.getItem("specialGift") == 0) {
                     loggedIn();
                 }
             }
@@ -90,16 +90,16 @@
             }
 
             function loggedIn() {
-                localeStorage.setItem("specialGift", 0);
+                sessionStorage.setItem("specialGift", 0);
                 var logDisplay = document.getElementById("log-in");
 
                 document.getElementById("log-in").innerHTML = "";
                 document.getElementById("log-in").textContent = "Welcome " + username + "!!";
                 document.getElementById("log-in").style.right = "10px";
 
-                logDisplay.addEventListener("click", function() {
-                    localeStorage.setItem("specialGift", 1);
-                    console.log("lala")
+                document.getElementById("temp-logo").addEventListener("click", function() {
+                    sessionStorage.setItem("specialGift", 1);
+                    console.log("special Gift reset: " +  sessionStorage.getItem("specialGift"))
                 });
             }
 
