@@ -1,6 +1,6 @@
 .ad-display {
-  width: 100%;
   display: flex; justify-content: center; flex-direction: column;
+  width: 100%;
 }
 
 .ad-banner {
