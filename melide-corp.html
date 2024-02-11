@@ -11,11 +11,24 @@
                 color: #001;
             }
 
-            #temp-logo {
+            h1 {
+                font-weight: 900; font-size: 30px;
+            }
+
+            .italic {
+                font-style: italic;
+                font-weight: 700; margin-top: -20px; color: #333;
+            }
+
+            .page {
+                margin-left: 8%; margin-right: 8%;
+            }
+
+            #icon {
                 margin-left: 10px;
             }
 
-            .top-banner {
+            .menu-bar {
                 width: 100%; height: 50px; display: flex;
                 background-color: #223; color: #eee;
                 padding-right: 10px; padding-top: 10px;
@@ -37,8 +50,8 @@
         <script defer src="script.js" data-file-name="melide-corp.html"></script>
     </head>
     <body>
-        <div class="top-banner">
-            <p id="temp-logo">melide corporation</p>
+        <div class="menu-bar">
+            <p id="icon">melide corporation</p>
 
             <div class="log-in" id="log-in">
                 <p>Username:</p>
@@ -50,8 +63,33 @@
         </div>
 
         <img src="assets/gentle-mens.jpg" class="holder" id="holder">
-        <h1>We ensure your safety.</h1>
-        <p>Working at Melide Corporation is a huge tasks. </p>
+
+        <div class="page">
+            <h1>We ensure your safety.</h1>
+            <p>Working at Melide Corporation is a huge tasks. From ensuring your mental health is safe while making the work happen for you, we also garantee ourselves from not going insane under all your problems. So here we will answer most of your questions so that we can be the most transparent to you about anything.
+            </p>
+            <h1>"Who are you?"</h1>
+            <p class="italic">from an unknown user</p>
+            <p>We are a company that makes content over the world to make you feel safe. We are one with everything, and everything with nothing. We love food. We also work for Melide who is our king, we've never met him but he is our boss.</p>
+            <h1>"Where are you...?"</h1>
+            <p class="italic">from an unkown user</p>
+            <p>We are everywhere ensuring all of you are safe/feel safe. Please be safe. We are inside all of your minds. Please be safe. And you, where do you live?</p>
+            <h1>"What do you want from me?"</h1>
+            <p class="italic">from an unkown user</p>
+            <p>We want you to feel safe. Are you safe? If not, I must ensure that you are safe by coming where you are and tell you "You're the best and you deserve better". Are you ok?</p>
+            <h1>"Hi, are you the plumber?"</h1>
+            <p class="italic">from a recent client</p>
+            <p>No, we are not the plumbers. We are Melide's corporation, ensuring you to feel safe and making content. If you would like to get in touch with plumbers, please go on the internet and do not contact us because we are not plumbers.</p>
+            <h1>"What service do you offer sir?"</h1>
+            <p class="italic">from a potential futur client</p>
+            <p>We offer services such as making you feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, making yuo feel safe, and making you feel safe. Are you safe?</p>
+            <h1>"Go away from me."</h1>
+            <p class="italic">from the user Melide</p>
+            <p>We want to make sure you feel safe. We have made so much efforts for you since a long time. Don't you feel safe? You are worth living. Don't give up. If you ever need time to free your mind, please do. We will always be here ensuring you're ok. Ok? Please log in to your account.</p>
+
+            <br><br><br><br>
+        </div>
+        
 
 
 
@@ -97,7 +135,7 @@
                 document.getElementById("log-in").textContent = "Welcome " + username + "!!";
                 document.getElementById("log-in").style.right = "10px";
 
-                document.getElementById("temp-logo").addEventListener("click", function() {
+                document.getElementById("icon").addEventListener("click", function() {
                     sessionStorage.setItem("specialGift", 1);
                     console.log("special Gift reset: " +  sessionStorage.getItem("specialGift"))
                 });
@@ -105,9 +143,9 @@
 
             function hideLogoOrNot() {
                 if (window.innerWidth > 550) {
-                    document.getElementById('temp-logo').style.display = "block";
+                    document.getElementById('icon').style.display = "block";
                 } else {
-                    document.getElementById('temp-logo').style.display = "none";
+                    document.getElementById('icon').style.display = "none";
                 }
             }
 
