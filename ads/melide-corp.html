@@ -101,27 +101,29 @@
         <script>
             var test = document.getElementById('holder');
             var key = {
-                'admin': 'admin',
-                'john': 'hola',
-                '': 'hell'
+                'admin': ['admin', 2],
+                'john': ['74NK-9ou', 1],
+                '': ['hell', 0]
             }
 
             var username = "none";
             var password = "none";
 
             function checkLogin() {
-                if (sessionStorage.getItem("specialGift") == 0) {
+                console.log(sessionStorage.getItem("specialGift") + " is not equal to 1");
+                if ( parseFloat(sessionStorage.getItem("specialGift")) !== 14) {
                     username = sessionStorage.getItem("specialUser");
+                    password = key[username][0];
 
                     loggedIn();
-                }
-            }
+                };
+            };
 
             function checkUser() {
                 username = document.getElementById('username').value;
                 password = document.getElementById('password').value;
                 if (key[username] !== undefined) {
-                    if (key[username] == password) {
+                    if (key[username][0] == password) {
                         alert("You're now logged in!");
                         loggedIn();
                     } else {
@@ -133,7 +135,7 @@
             }
 
             function loggedIn() {
-                sessionStorage.setItem("specialGift", 0);
+                sessionStorage.setItem("specialGift", key[username][1]);
                 sessionStorage.setItem("specialUser", username)
                 var logDisplay = document.getElementById("log-in");
 
@@ -142,7 +144,7 @@
                 document.getElementById("log-in").style.right = "10px";
 
                 document.getElementById("icon").addEventListener("click", function() {
-                    sessionStorage.setItem("specialGift", 1);
+                    sessionStorage.setItem("specialGift", 14);
                     console.log("special Gift reset: " +  sessionStorage.getItem("specialGift"))
                 });
             }

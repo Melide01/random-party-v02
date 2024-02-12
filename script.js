@@ -1,5 +1,5 @@
 let prevScrollPos = window.pageYOffset;
-var specialGift = 1;
+var specialGift = 14;
 var specialUser = null;
 
 // Settings Vars
@@ -71,11 +71,14 @@ function updateCurrentPage() {
     document.body.style.backgroundColor = '#000';
     document.getElementById("menu-bar").style.backgroundColor = "#333";
 
+    
+
     if (sessionStorage.getItem("specialGift") !== null) {
       specialGift = sessionStorage.getItem("specialGift");
     }
-    if (specialGift == 1) {
+    if (parseFloat(specialGift) !== 2) {
       document.getElementById("specialGift").style.display = "none";
+      console.log("caca");
     } else {
       document.getElementById("specialGift").style.display = "flex";
     };
@@ -110,9 +113,6 @@ function updateCurrentPage() {
       alert("Google ne veux pas que tu fermes cette pub.");
     });
   }
-  
-
-
 
   if (fileName == "socials.html") {
     document.getElementById("menu-bar").style.backgroundColor = "#e8d659";
@@ -121,8 +121,6 @@ function updateCurrentPage() {
   if (fileName == "random-event.html") {
     createRandomItem();
   }
-  
-  
 }
 
 var indexHTMLexplication = 0;
@@ -208,15 +206,16 @@ function isHTMLElement(text) {
 var lastRandom = 0;
 
 function createRandomItem(index) {
-  var normSpecialSlider = (randomItems.length - 2) / 100;
+  var normSpecialSlider = (randomItems.length - 1 - parseFloat(specialGift)) / 100;
 
 
 
   // Random Var
-  var randomIndex = (Math.floor(Math.random() * (randomItems.length - 1)) + 1);
+  var randomIndex = (Math.floor(Math.random()*(randomItems.length-1-parseFloat(specialGift))) + parseFloat(specialGift));
   if (index !== undefined) {
     randomIndex = Math.round(index);
   }
+  console.log(randomIndex);
 
   // Do not touch Vars
   var itemsDataEvent = "none";
