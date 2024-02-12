@@ -99,7 +99,7 @@ function updateCurrentPage() {
     if (randomAD == 0) {
       newImg.style.cursor = "pointer";
       newImg.addEventListener("click", function() {
-        window.open('melide-corp.html', '_self');
+        window.open('ads/melide-corp.html', '_self');
       });
     };
 
@@ -229,7 +229,6 @@ function createRandomItem(index) {
   
   // Animates the Rarity Number
   document.getElementById("index-display-display").style.opacity = .3;
-
   const numberRandomDisplay = document.getElementsByClassName('index-display');
 
   var rareColor = LerpColor(RarityColor[0], RarityColor[1], randomIndex / (randomItems.length - 1), colorExpPow);
@@ -300,7 +299,7 @@ function createRandomItem(index) {
   
   
   
-  // Hides the RandomButton when DateEvent is called
+  // Hides the RandomButton when DataEvent is called
   if (itemsDataEvent == "hide") {
     document.getElementById("random-button-div").style.display = "none";
   } else {
@@ -401,14 +400,6 @@ window.onscroll = function() {
   }
   prevScrollPos = currentScrollPos;
 }
-
-
-
-
-
-
-
-
 
 window.onload = function() {
   updateCurrentPage()
