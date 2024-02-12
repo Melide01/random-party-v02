@@ -207,9 +207,12 @@ function isHTMLElement(text) {
 var lastRandom = 0;
 
 function createRandomItem(index) {
-  var normSpecialSlider = (randomItems.length - 1) / 100;
+  var normSpecialSlider = (randomItems.length - 2) / 100;
+
+
+
   // Random Var
-  var randomIndex = Math.floor(Math.random() * randomItems.length);
+  var randomIndex = (Math.floor(Math.random() * (randomItems.length - 1)) + 1);
   if (index !== undefined) {
     randomIndex = Math.round(index);
   }
@@ -317,7 +320,7 @@ function createRandomItem(index) {
       });
 
       slider.addEventListener('change', function() {
-        createRandomItem(normSpecialSlider * sliderValue);
+        createRandomItem(normSpecialSlider * sliderValue + 1);
       })
     }
   }
