@@ -292,6 +292,13 @@ function createRandomItem(index) {
     } else if (/audio_/.test(element) ) {
       var audioElement = document.createElement('audio');
       var patternRemoved = element.replace("audio_", "");
+
+      if (/.mp3/.test(patternRemoved) || /.MP3/.test(patternRemoved)) {
+        patternRemoved.type = "audio/mpeg";
+      } else if (/.wav/.test(patternRemoved) || /.WAV/.test(patternRemoved)) {
+        patternRemoved.type = "audio/wav";
+      };
+
       audioElement.src = srcDirectory + "audios/" + patternRemoved;
       audioElement.id = 'items';
       audioElement.controls = true;
@@ -376,6 +383,11 @@ function decorateRainbow() {
 }
 
 
+function finalGift() {
+  var gift = document.createElement('div');
+  gift.innerHTML = '<div class="gift" id="gift"><video controls src="RandomFolder/videos/aurevoir-leak.mp4"></video></video></div>'
+  document.body.appendChild(gift);
+}
 
 
 
