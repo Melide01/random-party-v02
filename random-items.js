@@ -28,6 +28,11 @@ var randomItems = [
   'vid_petite-video.mp4',
   'vid_rudy-talent.MOV',
   
+  'audio_processed_happens-all-the-time.mp3',
+  'audio_processed_est-elle.mp3',
+  'audio_processed-lady-melody.mp3',
+  'audio_processed_la-seine.mp3',
+
   'img_aesthetic.jpg',
   'img_bg.jpg',
   'img_cafe.PNG',
