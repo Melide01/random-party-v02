@@ -1,9 +1,8 @@
 var btnGift = document.getElementById("btnGift");
 btnGift.addEventListener("click", eventGift);
 
-
 function eventGift() {
-    if (document.getElementById("inputGift").value > 0) {
+    if (document.getElementById("inputGift").value > 1) {
       var newIndex = document.getElementById("inputGift").value - 1;
       
       if (newIndex < randomItems.length) {

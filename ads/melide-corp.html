@@ -47,10 +47,10 @@
                 width: 100%; height: 30vh; overflow: hidden; object-fit: cover;  
             }
         </style>
-        <script defer src="script.js" data-file-name="melide-corp.html"></script>
+        <script defer src="../script.js" data-file-name="melide-corp.html"></script>
     </head>
     <body>
-        <div class="menu-bar">
+        <div class="menu-bar" id="menu-bar">
             <p id="icon">melide corporation</p>
 
             <div class="log-in" id="log-in">
@@ -102,7 +102,8 @@
             var test = document.getElementById('holder');
             var key = {
                 'admin': 'admin',
-                'john': 'hola'
+                'john': 'hola',
+                '': 'hell'
             }
 
             var username = "none";
@@ -110,6 +111,8 @@
 
             function checkLogin() {
                 if (sessionStorage.getItem("specialGift") == 0) {
+                    username = sessionStorage.getItem("specialUser");
+
                     loggedIn();
                 }
             }
@@ -122,13 +125,16 @@
                         alert("You're now logged in!");
                         loggedIn();
                     } else {
-                        alert("Wrong password");
+                        alert("Wrong password.");
                     }
+                } else if (username!=="" && password!=="") {
+                    alert("Unknown user.")
                 }
             }
 
             function loggedIn() {
                 sessionStorage.setItem("specialGift", 0);
+                sessionStorage.setItem("specialUser", username)
                 var logDisplay = document.getElementById("log-in");
 
                 document.getElementById("log-in").innerHTML = "";

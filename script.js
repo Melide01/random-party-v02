@@ -1,11 +1,12 @@
 let prevScrollPos = window.pageYOffset;
 var specialGift = 1;
+var specialUser = null;
 
 // Settings Vars
 var srcDirectory = "RandomFolder/";
 var buttonColor = "#5c61b2";
 var RarityColor = [0xFFce00, 0xFFFFFF]
-var colorExpPow = 2;
+var colorExpPow = 0.2;
 
 // Don't touch vars
 var scriptElement = document.currentScript;
@@ -278,7 +279,7 @@ function createRandomItem(index) {
       imgElement.id = 'items';
       imgElement.setAttribute('data-event', 'none');
       display.appendChild(imgElement);
-      
+
     } else if (/vid_/.test(element) ) {
       var vidElement = document.createElement('video');
       var patternRemoved = element.replace("vid_", "");
@@ -287,6 +288,15 @@ function createRandomItem(index) {
       vidElement.controls = true;
       vidElement.setAttribute('data-event', 'none');
       display.appendChild(vidElement);
+    
+    } else if (/audio_/.test(element) ) {
+      var audioElement = document.createElement('audio');
+      var patternRemoved = element.replace("audio_", "");
+      audioElement.src = srcDirectory + "audios/" + patternRemoved;
+      audioElement.id = 'items';
+      audioElement.controls = true;
+      audioElement.setAttribute('data-event', 'none');
+      display.appendChild(audioElement);
     }
   }
   

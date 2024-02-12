@@ -17,7 +17,7 @@ var randomItems = [
   'vid_branleur.MOV',
   'vid_chanson-pour-toi.MOV',
   'vid_code-pas-de-batterie.mp4',
-  'vid_compatibilité PC et mobile.MP4',
+  'vid_compatibilite_PC_et_mobile.MP4',
   'vid_eiwa.MOV',
   'vid_evadls-leak.mp4',
   'vid_exclu-nul1.MOV',
