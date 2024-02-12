@@ -11,6 +11,8 @@ var randomItems = [
   'vid_final-meldup2.mp4',
   'vid_final-meldup3.mp4',
 
+  'vid_random-slider.mp4',
+  'vid_meldup-cashange.mp4',
 
   'vid_aurevoir-leak.mp4',
   'vid_background-speedrun.mp4',
