@@ -30,6 +30,8 @@ var randomItems = [
   'vid_petite-video.mp4',
   'vid_rudy-talent.MOV',
   
+  'special_danganronpa/danganronpa.html',
+
   'audio_processed_happens-all-the-time.mp3',
   'audio_processed_est-elle.mp3',
   'audio_processed-lady-melody.mp3',

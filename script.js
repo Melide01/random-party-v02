@@ -303,6 +303,10 @@ function createRandomItem(index) {
       audioElement.controls = true;
       audioElement.setAttribute('data-event', 'none');
       display.appendChild(audioElement);
+    } else if (/special_/.test(element) ) {
+      var patternRemoved = element.replace("special_", "");
+
+      window.location.href = 'RandomFolder/specials/' + patternRemoved;
     }
   }
   
