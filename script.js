@@ -351,7 +351,21 @@ function createRandomItem(index) {
   // Finalize Display
   setTimeout(function() {
     document.getElementById("display-random").style.minHeight = "200px";
-    document.getElementById("index-display").textContent = randomIndex - 16 + " / " + (randomItems.length - 17);
+
+    var finalIndex = randomIndex - 16 + " / " + (randomItems.length - 17);
+    document.getElementById("index-display").textContent = finalIndex;
+
+    if ( finalIndex >= 14) {
+      document.getElementById('displayRarity').textContent = 'COMMON';
+    } else if ( finalIndex > 1) {
+      document.getElementById('displayRarity').textContent = 'RARE';
+    } else if ( finalIndex = 1 ) {
+      document.getElementById('displayRarity').textContent = 'SUPER-MEGA-RARE';
+    } else if ( finalIndex < 1 ){
+      document.getElementById('displayRarity').textContent = 'BROKEN';
+    }
+    
+
     document.getElementById("index-display-display").style.opacity = 1;
     
     document.getElementById("items").style.display = 'block';

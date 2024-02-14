@@ -9,6 +9,14 @@ body, html {
   background-position: center;
 }
 
+#displayRarity {
+  top: -20px;
+  margin-left: 10%; margin-top: 5px;
+  color: #fff; font-size: 20px;
+  font-weight: 800;
+  margin-top: -6vh;
+}
+
 #items {
   display: none; max-width: 90%; max-height: 200px;
   margin-top: 10px; margin-bottom: 10px;
@@ -220,7 +228,7 @@ h2 {
 
 .index-display-display {
   display: flex; 
-  margin-left: 10%;
+  margin-left: 10%; margin-bottom: 0;
   opacity: 1;
   transition: opacity .2s;
 }
@@ -228,7 +236,7 @@ h2 {
 .index-display {
   color: #fff; font-size: 30px;
   font-weight: 800;
-  margin-top: -6vh;
+  margin-top: -6vh; margin-bottom: 0;
 }
 
 
