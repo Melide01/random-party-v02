@@ -289,8 +289,16 @@ function createRandomItem(index) {
       display.appendChild(vidElement);
     
     } else if (/audio_/.test(element) ) {
-      var audioElement = document.createElement('audio');
+      var divElement = document.createElement('div');
+      divElement.innerHTML = '<div id="items" data-event="hidden" class="audioViewer"><img id="audioCover"><audio controls id="audioAudio"></div>';
+      display.appendChild(divElement);
+
       var patternRemoved = element.replace("audio_", "");
+
+      if ( randomSongCover[patternRemoved] !== undefined ) {
+        document.getElementById('audioCover').src = 'RandomFolder/audios/cover-image/' + randomSongCover[patternRemoved];
+        
+      };
 
       if (/.mp3/.test(patternRemoved) || /.MP3/.test(patternRemoved)) {
         patternRemoved.type = "audio/mpeg";
@@ -298,11 +306,13 @@ function createRandomItem(index) {
         patternRemoved.type = "audio/wav";
       };
 
-      audioElement.src = srcDirectory + "audios/" + patternRemoved;
-      audioElement.id = 'items';
-      audioElement.controls = true;
-      audioElement.setAttribute('data-event', 'none');
-      display.appendChild(audioElement);
+
+      document.getElementById('audioAudio').src = srcDirectory + "audios/" + patternRemoved;
+      // audioElement.id = 'items';
+      // audioElement.controls = true;
+      // audioElement.setAttribute('data-event', 'hidden');
+      // display.appendChild(audioElement);
+
     } else if (/special_/.test(element) ) {
       var patternRemoved = element.replace("special_", "");
 
@@ -377,7 +387,7 @@ function createRandomItem(index) {
 
     document.getElementById("index-display-display").style.opacity = 1;
     
-    document.getElementById("items").style.display = 'block';
+    document.getElementById("items").style.display = 'flex';
     lastRandom = randomIndex;
   }, 250)
   

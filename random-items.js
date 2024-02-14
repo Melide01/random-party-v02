@@ -113,3 +113,10 @@ var randomItems = [
 ];
 
 var randomQuotes = {};
+
+var randomSongCover = {
+  'processed_est-elle.mp3': 'help.png',
+  'processed_happens-all-the-time.mp3': 'help.png',
+  'processed_la-seine.mp3': 'help.png',
+  'processed-lady-melody.mp3': 'help.png',
+}
