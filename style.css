@@ -10,11 +10,10 @@ body, html {
 }
 
 #displayRarity {
-  top: -20px;
-  margin-left: 10%; margin-top: 5px;
+  margin-left: 10%;
   color: #fff; font-size: 20px;
   font-weight: 800;
-  margin-top: -6vh;
+  margin-top: -30px;
 }
 
 #items {
@@ -24,13 +23,14 @@ body, html {
 }
 
 .audioViewer {
+  margin-left: 5%;
   display: flex; flex-direction: row;
-  background-color: #333;
   justify-content: center; align-items: center;
 }
 
 #audioCover {
-  height: 100px; width: auto;
+  height: auto; width: 20%; margin-right: 10px;
+  border-radius: 8px;
 }
 
 .gift {
@@ -243,7 +243,7 @@ h2 {
 .index-display {
   color: #fff; font-size: 30px;
   font-weight: 800;
-  margin-top: -6vh; margin-bottom: 0;
+  margin-top: -30px; margin-bottom: 0;
 }
 
 

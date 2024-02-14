@@ -290,7 +290,7 @@ function createRandomItem(index) {
     
     } else if (/audio_/.test(element) ) {
       var divElement = document.createElement('div');
-      divElement.innerHTML = '<div id="items" data-event="hidden" class="audioViewer"><img id="audioCover"><audio controls id="audioAudio"></div>';
+      divElement.innerHTML = '<div id="items" class="audioViewer"><img id="audioCover"><audio controls id="audioAudio"></div>';
       display.appendChild(divElement);
 
       var patternRemoved = element.replace("audio_", "");
@@ -306,12 +306,7 @@ function createRandomItem(index) {
         patternRemoved.type = "audio/wav";
       };
 
-
       document.getElementById('audioAudio').src = srcDirectory + "audios/" + patternRemoved;
-      // audioElement.id = 'items';
-      // audioElement.controls = true;
-      // audioElement.setAttribute('data-event', 'hidden');
-      // display.appendChild(audioElement);
 
     } else if (/special_/.test(element) ) {
       var patternRemoved = element.replace("special_", "");
