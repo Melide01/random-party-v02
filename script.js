@@ -1,5 +1,5 @@
 let prevScrollPos = window.pageYOffset;
-var specialGift = 14;
+var specialGift = 17;
 var specialUser = null;
 
 // Settings Vars
@@ -76,7 +76,7 @@ function updateCurrentPage() {
     if (sessionStorage.getItem("specialGift") !== null) {
       specialGift = sessionStorage.getItem("specialGift");
     }
-    if (parseFloat(specialGift) !== 2) {
+    if (parseFloat(specialGift) !== 1) {
       document.getElementById("specialGift").style.display = "none";
       console.log("caca");
     } else {
@@ -339,7 +339,7 @@ function createRandomItem(index) {
       });
 
       slider.addEventListener('change', function() {
-        createRandomItem(normSpecialSlider * sliderValue + 1);
+        createRandomItem(normSpecialSlider * sliderValue + 0);
       })
     }
   }
@@ -351,7 +351,7 @@ function createRandomItem(index) {
   // Finalize Display
   setTimeout(function() {
     document.getElementById("display-random").style.minHeight = "200px";
-    document.getElementById("index-display").textContent = randomIndex +1 + " / " + randomItems.length;
+    document.getElementById("index-display").textContent = randomIndex - 16 + " / " + (randomItems.length - 17);
     document.getElementById("index-display-display").style.opacity = 1;
     
     document.getElementById("items").style.display = 'block';

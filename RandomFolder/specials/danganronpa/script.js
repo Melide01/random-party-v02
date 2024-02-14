@@ -102,13 +102,3 @@ function typeWrite() {
     };
 };
 
-window.onload = function() {
-    if (isRandomArray == 0) {
-        const randomIndex = Math.round(Math.random() * arrayArray.length);
-        currentArray = arrayArray[randomIndex];
-        console.log(randomIndex);
-    };
-    
-    updateDialog();
-  }
-  

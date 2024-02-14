@@ -19,6 +19,10 @@ var randomItems = [
   'vid_branleur.MOV',
   'vid_chanson-pour-toi.MOV',
   'vid_code-pas-de-batterie.mp4',
+
+  // Here's the number 1
+  '<a id="items" data-event="hide"></a>',
+
   'vid_compatibilite_PC_et_mobile.MP4',
   'vid_eiwa.MOV',
   'vid_evadls-leak.mp4',
