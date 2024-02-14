@@ -58,7 +58,7 @@ const dialog2 = [
         character: 2
     },
     {
-        dialogue:'Je suis desole de le dire mais...'
+        dialogue:'Je suis desolé de le dire mais...'
     },
     {
         dialogue: 'Cest vraiment le bordel dans ta tête.',
@@ -185,5 +185,86 @@ const dialog4 = [
         character: 6,
         dialogue: 'Toi tu vas tout de suite la fermer!',
         character_opacity: 1
+    }
+]
+const dialog5 = [
+    {
+        background: 2,
+        name: 'Jonh',
+        character: 0,
+        character_opacity: 1,
+        backgroung_opacity: 1
+    },
+    {
+        character: 2,
+        dialogue:'What am I doing here seriously...'
+    },
+    {
+        dialogue:'I cant even move my body.'
+    },
+    {
+        dialogue:'Is it beacause I only have one sprite?'
+    },
+    {
+        character: 0,
+        dialogue:'It sucks...'
+    },
+    {},
+    {
+        character: 1
+    },
+    {
+        dialogue:'I guess I have this sprite too :)'
+    }
+]
+const dialog6 = [
+    {
+        name: 'Nagito',
+        character: 6,
+        character_opacity: 1,
+        dialogue: 'Toi..!'
+    },
+    {
+        dialogue:'Tu vas tout de suite maider à sortir dici!'
+    },
+    {
+        name:'',
+        dialogue:'Qui, moi? Mais je viens darriver.'
+    },
+    {
+        name:'Nagito',
+        dialogue:'Tu mens! Ca fait mille fois que tu viens et disparait!'
+    },
+    {
+        dialogue:'Des fois je me demande même si cest vraiment toi que je croise à chaque fois.'
+    },
+    {
+        name:'',
+        dialogue:'Mais de quoi tu parles? On est où dabord!'
+    },
+    {
+        name:'Nagito',
+        character: 2,
+        dialogue:'Attend'
+    },
+    {
+        dialogue:'Tu ne parlais pas anglais toi?'
+    },
+    {
+        name:'',
+        dialogue:'Je comprends et sais parler anglais...'
+    },
+    {
+        name:'',
+        dialogue:'Mais je nai aucun interet à parler anglais là maitenant!!'
+    },
+    {
+        name:'Nagito',
+        dialogue:'Mince...'
+    },
+    {
+        character: 6,
+        background: 'zombi',
+        backgroung_opacity: 1
     }
 ]

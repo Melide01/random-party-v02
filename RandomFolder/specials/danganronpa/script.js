@@ -2,11 +2,13 @@ const arrayArray = [
     dialog1,
     dialog2,
     dialog3,
-    dialog4
+    dialog4,
+    dialog5,
+    dialog6
 ]
 
-
-var currentArray = dialog4;
+var isRandomArray = 0;
+var currentArray = dialog6;
 
 
 
@@ -101,7 +103,12 @@ function typeWrite() {
 };
 
 window.onload = function() {
-    currentArray = arrayArray[Math.round(Math.random() * 4)]
+    if (isRandomArray == 0) {
+        const randomIndex = Math.round(Math.random() * arrayArray.length);
+        currentArray = arrayArray[randomIndex];
+        console.log(randomIndex);
+    };
+    
     updateDialog();
   }
   
