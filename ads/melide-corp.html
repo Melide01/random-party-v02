@@ -99,9 +99,10 @@
 
 
         <script>
+            const setIndex = 17;
             var test = document.getElementById('holder');
             var key = {
-                'admin': ['admin', 14],
+                'admin': ['admin', 2],
                 'john': ['74NK-9ou', 1],
                 '': ['hell', 0]
             }
@@ -111,7 +112,7 @@
 
             function checkLogin() {
                 console.log(sessionStorage.getItem("specialGift") + " is not equal to 1");
-                if ( parseFloat(sessionStorage.getItem("specialGift")) !== 14) {
+                if ( parseFloat(sessionStorage.getItem("specialGift")) !== setIndex) {
                     username = sessionStorage.getItem("specialUser");
                     password = key[username][0];
 
@@ -144,7 +145,8 @@
                 document.getElementById("log-in").style.right = "10px";
 
                 document.getElementById("icon").addEventListener("click", function() {
-                    sessionStorage.setItem("specialGift", 14);
+                    sessionStorage.setItem("specialGift", setIndex);
+                    alert('Succesfully signed out!');
                     console.log("special Gift reset: " +  sessionStorage.getItem("specialGift"))
                 });
             }
