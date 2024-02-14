@@ -1,38 +1,12 @@
-var dialog1 = [
-    {
-        name: '',
-        dialogue: 'Eh toi...',
-        background: 1,
-        character: 2,
-        character_opacity: 0,
-        backgroung_opacity: 0
-    },
-    {
-        character: 2,
-        character_opacity: 1,
-        backgroung_opacity: 1
-    },
-    {
-        name:'Nagito',
-        character: 1,
-        dialogue: 'Tu vas bien?'
-    },
-    {
-        character: 3,
-        dialogue: 'Hônnetement tu as lair creuvé.'
-    },
-    {
-        character: 1,
-        dialogue: 'Prends du temps pour dormir sil te plait.'
-    },
-    {
-        character: 7,
-        character_opacity: 0,
-        dialogue: 'A plus!'
-    }
+const arrayArray = [
+    dialog1,
+    dialog2,
+    dialog3,
+    dialog4
 ]
 
-var currentArray = dialog1;
+
+var currentArray = dialog4;
 
 
 
@@ -60,12 +34,21 @@ function updateDialog() {
     if (currentDialogIndex !== undefined) {
         currentText = currentDialogIndex['dialogue'];
 
+        
+    
         if (currentDialogIndex['name'] !== undefined) {
             document.getElementById("dangan-name").textContent = currentDialogIndex['name'];
-            if (currentDialogIndex['name'] !== "") {
+            if (currentDialogIndex['name'] !== "" && currentDialogIndex['name'] !== "???") {
                 currentName = currentDialogIndex['name'];
             };
         };
+
+        if (currentDialogIndex['name'] == "") {
+            document.getElementById('dangan-dialog').style.color = "#aaaaff";
+        } else {
+            document.getElementById('dangan-dialog').style.color = "#ffffffff";
+        }
+
 
         if (currentDialogIndex['character'] !== undefined) {
             document.getElementById("dangan-character").src = currentName + '/' + currentName + currentDialogIndex['character'] + '.png';
@@ -111,13 +94,14 @@ function typeWrite() {
 
         setTimeout(function() {
             typeWrite(currentText);
-        }, 50);
+        }, 20);
     } else {
         return
     };
 };
 
 window.onload = function() {
+    currentArray = arrayArray[Math.round(Math.random() * 4)]
     updateDialog();
   }
   
