@@ -186,6 +186,8 @@ var randomItems = [
   'img_souvenir.JPG',
   'img_roi.PNG',
 
+  '<p id="items" data-event="hide">wow</p>',
+
   // Last hints
   '<p id="items" data-event="hide">wait</p>',
   '<p id="items" data-event="hide">wait</p>'

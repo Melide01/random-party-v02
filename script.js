@@ -209,7 +209,7 @@ function createRandomItem(index) {
   
 
   // Random Var
-  var randomIndex = (Math.floor(Math.random()*(randomItems.length-1-parseFloat(specialGift))) + parseFloat(specialGift));
+  var randomIndex = (Math.floor(  Math.random()  *  (randomItems.length - 2 - parseFloat(specialGift) )) ) + parseFloat(specialGift);
   
   // debug
   console.log(randomIndex + " then " + (randomIndex - limitGift + 1));
@@ -362,7 +362,7 @@ function createRandomItem(index) {
   // Finalize Display
   setTimeout(function() {
     document.getElementById("display-random").style.minHeight = "200px";
-    
+
     var finalIndex = randomIndex - (limitGift - 1);
     if (randomIndex > 0) {
       document.getElementById("index-display").textContent = finalIndex  + " / " + ((randomItems.length - limitGift) - 2);
