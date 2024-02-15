@@ -112,6 +112,12 @@ var randomItems = [
   'img_random-beau.jpg',
   'img_releve-bancaire.JPG',
 
+  'blocked.png',
+  'old-memories.jpeg',
+  'peace.jpeg',
+  'random-last-rare.jpeg',
+  'thanks.jpeg',
+
   'img_cool-art.jpg',
   'img_crescent-melide.PNG',
   'img_euh.PNG',
