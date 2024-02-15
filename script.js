@@ -1,5 +1,6 @@
 let prevScrollPos = window.pageYOffset;
 var specialGift = 17;
+const limitGift = 17;
 var specialUser = null;
 
 // Settings Vars
@@ -357,8 +358,8 @@ function createRandomItem(index) {
   setTimeout(function() {
     document.getElementById("display-random").style.minHeight = "200px";
 
-    var finalIndex = randomIndex - 16;
-    document.getElementById("index-display").textContent = finalIndex  + " / " + (randomItems.length - 17);
+    var finalIndex = randomIndex - (limitGift - 1);
+    document.getElementById("index-display").textContent = finalIndex  + " / " + ((randomItems.length - limitGift) - 2);
     console.log(finalIndex);
 
     if ( finalIndex < 1 ) {
@@ -372,6 +373,14 @@ function createRandomItem(index) {
     if ( finalIndex >= 14) {
       document.getElementById('displayRarity').textContent = 'COMMON';
       document.getElementById('displayRarity').style.color = '#ddd';
+      if ( finalIndex > ((randomItems.length - limitGift) - 2)) {
+        document.getElementById('displayRarity').textContent = 'LOST';
+        document.getElementById('displayRarity').style.color = '#a55';
+      
+        numberRandomDisplay[0].style.color = '#a55';
+        numberRandomDisplay[1].style.color = '#a55';
+      }
+
     } else if ( finalIndex > 1) {
       document.getElementById('displayRarity').textContent = 'RARE';
       document.getElementById('displayRarity').style.color = '#ffdd00';

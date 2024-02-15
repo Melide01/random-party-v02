@@ -1,15 +1,16 @@
 var randomItems = [
   '<a id="items" data-event="hide" onclick="finalGift()">Clique ici...</a>',
   '<input type="range" id="items" data-type="slider" data-event="hide" min="0" max="100" value="50" step="1">',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
+  'Z',
+  'O',
+  'M',
+  'B',
+  'I',
+
   '',
   '',
 
+  '',
   '',
   '',
 
