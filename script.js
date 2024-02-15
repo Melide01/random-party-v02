@@ -77,9 +77,8 @@ function updateCurrentPage() {
     if (sessionStorage.getItem("specialGift") !== null) {
       specialGift = sessionStorage.getItem("specialGift");
     }
-    if (parseFloat(specialGift) !== 1) {
+    if (parseFloat(specialGift) == 17) {
       document.getElementById("specialGift").style.display = "none";
-      console.log("caca");
     } else {
       document.getElementById("specialGift").style.display = "flex";
     };
@@ -124,9 +123,10 @@ function updateCurrentPage() {
   }
 }
 
+
+
 var indexHTMLexplication = 0;
 var opacityIndex = 0;
-
 
 function changeIndexPage(dir) {
   var tempCONDITION = indexHTMLexplication + dir;
@@ -152,16 +152,12 @@ function changeIndexPage(dir) {
           
         }
         
-        
-        
         decorateRainbow()
         quickRandom()
       }, 200);
     }
   }
 
-  
-  
   if (indexHTMLexplication == 0) {
     document.getElementById("leftPageButton").style.backgroundColor = "#ccc";
   } else {
@@ -210,9 +206,15 @@ function createRandomItem(index) {
   var normSpecialSlider = (randomItems.length - 1 - parseFloat(specialGift)) / 100;
   document.getElementById('displayRarity').textContent = '_';
 
+  
 
   // Random Var
   var randomIndex = (Math.floor(Math.random()*(randomItems.length-1-parseFloat(specialGift))) + parseFloat(specialGift));
+  
+  // debug
+  console.log(randomIndex + " then " + (randomIndex - limitGift + 1));
+  console.log(document.getElementById(randomItems[randomIndex]));
+
   if (index !== undefined) {
     randomIndex = Math.round(index) + limitGift;
   };
@@ -265,7 +267,11 @@ function createRandomItem(index) {
     var tempDiv = document.createElement('div');
     tempDiv.innerHTML = randomItems[randomIndex];
     display.appendChild(tempDiv.firstChild);
-    itemsDataEvent = document.getElementById("items").dataset.event;
+
+    if (document.getElementById("items").dataset.event !== undefined) {
+      itemsDataEvent = document.getElementById("items").dataset.event;
+    };
+    
   }
   // Every Other Generation
   if (!isHTMLElement(randomItems[randomIndex]) ) {
@@ -344,22 +350,28 @@ function createRandomItem(index) {
       });
 
       slider.addEventListener('change', function() {
-        createRandomItem(normSpecialSlider * sliderValue + 0);
+        createRandomItem(normSpecialSlider * sliderValue - limitGift);
       })
     }
   }
 
 
-
+    
 
   
   // Finalize Display
   setTimeout(function() {
     document.getElementById("display-random").style.minHeight = "200px";
-
+    
     var finalIndex = randomIndex - (limitGift - 1);
-    document.getElementById("index-display").textContent = finalIndex  + " / " + ((randomItems.length - limitGift) - 2);
-    console.log(finalIndex);
+    if (randomIndex > 0) {
+      document.getElementById("index-display").textContent = finalIndex  + " / " + ((randomItems.length - limitGift) - 2);
+    } else {
+      document.body.style.backgroundImage = 'url("assets/checkBoard.png")';
+      document.getElementById('specialGift').style.display = 'none';
+    }
+    
+
 
     if ( finalIndex < 1 ) {
       document.getElementById('displayRarity').textContent = 'BROKEN';

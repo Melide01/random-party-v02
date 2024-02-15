@@ -22,8 +22,9 @@ var randomItems = [
 
   // Here's the number 1
   '<a id="items" data-event="hide"></a>',
+  'vid_random-slider.mp4',
 
-  '<button id="items" class="btn" data-event="none">Appuie sur le bouton</button>',
+  '<button id="items" class="btn" data-event="none" onclick="createRandomItem()">Appuie sur le bouton</button>',
   '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
 
   'vid_ebde-la-voitue.mp4',
@@ -33,7 +34,7 @@ var randomItems = [
   'vid_final-meldup2.mp4',
   'vid_final-meldup3.mp4',
 
-  'vid_random-slider.mp4',
+  
   'vid_meldup-cashange.mp4',
 
   'vid_aurevoir-leak.mp4',
