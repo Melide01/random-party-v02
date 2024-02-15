@@ -214,9 +214,8 @@ function createRandomItem(index) {
   // Random Var
   var randomIndex = (Math.floor(Math.random()*(randomItems.length-1-parseFloat(specialGift))) + parseFloat(specialGift));
   if (index !== undefined) {
-    randomIndex = Math.round(index);
-  }
-  console.log(randomIndex);
+    randomIndex = Math.round(index) + limitGift;
+  };
 
   // Do not touch Vars
   var itemsDataEvent = "none";
@@ -363,7 +362,6 @@ function createRandomItem(index) {
     console.log(finalIndex);
 
     if ( finalIndex < 1 ) {
-      console.log('jai mal');
       document.getElementById('displayRarity').textContent = 'BROKEN';
       document.getElementById('displayRarity').style.color = '#dd0000';
       

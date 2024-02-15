@@ -39,6 +39,8 @@ var randomItems = [
   'vid_aurevoir-leak.mp4',
   'vid_background-speedrun.mp4',
   'vid_branleur.MOV',
+
+  // Above is rare
   'vid_chanson-pour-toi.MOV',
   'vid_code-pas-de-batterie.mp4',
 
@@ -184,8 +186,8 @@ var randomItems = [
   'img_roi.PNG',
 
   // Last hints
-  '',
-  ''
+  '<p id="items" data-event="hide">wait</p>',
+  '<p id="items" data-event="hide">wait</p>'
 ];
 
 var randomQuotes = {};
