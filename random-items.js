@@ -181,7 +181,11 @@ var randomItems = [
   'img_wassup.JPG',
   'img_ytb-banner.PNG',
   'img_souvenir.JPG',
-  'img_roi.PNG'
+  'img_roi.PNG',
+
+  // Last hints
+  '',
+  ''
 ];
 
 var randomQuotes = {};
