@@ -128,7 +128,12 @@ var randomItems = [
   'img_uwu-model.JPG',
   'img_wip-demons.jpg',
   'img_wip-ttd.PNG',
-  'img_yoda-zach.JPG'
+  'img_yoda-zach.JPG',
+
+  'img_wassup.JPG',
+  'img_ytb-banner.PNG',
+  'img_souvenir.JPG',
+  'img_roi.PNG'
 ];
 
 var randomQuotes = {};
