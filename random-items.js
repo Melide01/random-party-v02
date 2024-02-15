@@ -1,6 +1,27 @@
 var randomItems = [
   '<a id="items" data-event="hide" onclick="finalGift()">Clique ici...</a>',
   '<input type="range" id="items" data-type="slider" data-event="hide" min="0" max="100" value="50" step="1">',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+
+  '',
+  '',
+
+  '',
+  '',
+  '',
+  '',
+  '',
+
+  // Here's the number 1
+  '<a id="items" data-event="hide"></a>',
+
   '<button id="items" class="btn" data-event="none">Appuie sur le bouton</button>',
   '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
 
@@ -19,9 +40,7 @@ var randomItems = [
   'vid_branleur.MOV',
   'vid_chanson-pour-toi.MOV',
   'vid_code-pas-de-batterie.mp4',
-
-  // Here's the number 1
-  '<a id="items" data-event="hide"></a>',
+  
 
   'vid_compatibilite_PC_et_mobile.MP4',
   'vid_eiwa.MOV',
