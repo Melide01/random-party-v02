@@ -304,8 +304,9 @@ function createRandomItem(index) {
 
       if ( randomSongCover[patternRemoved] !== undefined ) {
         document.getElementById('audioCover').src = 'RandomFolder/audios/cover-image/' + randomSongCover[patternRemoved];
-        
-      };
+      } else {
+        document.getElementById('audioCover').src = 'RandomFolder/audios/cover-image/emptyCoverAudio.png';
+      }
 
       if (/.mp3/.test(patternRemoved) || /.MP3/.test(patternRemoved)) {
         patternRemoved.type = "audio/mpeg";

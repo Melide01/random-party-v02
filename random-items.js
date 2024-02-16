@@ -31,17 +31,23 @@ var randomItems = [
   'audio_umihi-nei.mp3',
   'audio_moonmen-cover-2017.mp3',
   'audio_time-like-these-2017.mp3',
-  'audio_it-is-over.mp3',
+  
   'audio_dont-2019.mp3',
   'audio_i-love-you-forever.mp3',
 
-  'vid_tiens-prend-ca.mp4',
+  'vid_je-ne-t-aime-plus.MOV',
+  'vid_evadls-leak.mp4',
+
+  
   'vid_final-meldup1.mp4',
   'vid_final-meldup2.mp4',
   'vid_final-meldup3.mp4',
   'vid_meldup-cashange.mp4',
 
   // Above is rare
+  'vid_tiens-prend-ca.mp4',
+  'audio_it-is-over.mp3',
+
   '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
 
   'vid_aurevoir-leak.mp4',
@@ -97,11 +103,11 @@ var randomItems = [
 
   'vid_compatibilite_PC_et_mobile.MP4',
   'vid_eiwa.MOV',
-  'vid_evadls-leak.mp4',
+  
   'vid_exclu-nul1.MOV',
   'vid_ia1.MOV',
   'vid_jcdvp-leak.mp4',
-  'vid_je-ne-t-aime-plus.MOV',
+  
   'vid_like-pain.mp4',
   'vid_petite-video.mp4',
   'vid_rudy-talent.MOV',
