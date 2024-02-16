@@ -26,7 +26,7 @@ var randomItems = [
 
   'vid_random-slider.mp4',
   '<button id="items" class="btn" data-event="none" onclick="createRandomItem()">Appuie sur le bouton</button>',
-  '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
+  
 
   'audio_umihi-nei.mp3',
   'audio_moonmen-cover-2017.mp3',
@@ -35,21 +35,21 @@ var randomItems = [
   'audio_dont-2019.mp3',
   'audio_i-love-you-forever.mp3',
 
-  'vid_ebde-la-voitue.mp4',
-  'vid_quand-t-arrives-sur-gta.mp4',
   'vid_tiens-prend-ca.mp4',
   'vid_final-meldup1.mp4',
   'vid_final-meldup2.mp4',
   'vid_final-meldup3.mp4',
-
-  
   'vid_meldup-cashange.mp4',
+
+  // Above is rare
+  '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
 
   'vid_aurevoir-leak.mp4',
   'vid_background-speedrun.mp4',
   'vid_branleur.MOV',
+  'vid_ebde-la-voitue.mp4',
+  'vid_quand-t-arrives-sur-gta.mp4',
 
-  // Above is rare
   'vid_chanson-pour-toi.MOV',
   'vid_code-pas-de-batterie.mp4',
 
