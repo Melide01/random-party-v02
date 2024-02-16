@@ -21,11 +21,19 @@ var randomItems = [
   '',
 
   // Here's the number 1
-  '<a id="items" data-event="hide"></a>',
-  'vid_random-slider.mp4',
+  '<a id="items" data-event="hide">Numba One BRAVO</a>',
+  // Here's the number 1
 
+  'vid_random-slider.mp4',
   '<button id="items" class="btn" data-event="none" onclick="createRandomItem()">Appuie sur le bouton</button>',
   '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
+
+  'audio_umihi-nei.mp3',
+  'audio_moonmen-cover-2017.mp3',
+  'audio_time-like-these-2017.mp3',
+  'audio_it-is-over.mp3',
+  'audio_dont-2019.mp3',
+  'audio_i-love-you-forever.mp3',
 
   'vid_ebde-la-voitue.mp4',
   'vid_quand-t-arrives-sur-gta.mp4',
@@ -186,11 +194,13 @@ var randomItems = [
   'img_souvenir.JPG',
   'img_roi.PNG',
 
-  '<p id="items" data-event="hide">wow</p>',
-
   // Last hints
   '<p id="items" data-event="hide">wait</p>',
-  '<p id="items" data-event="hide">wait</p>'
+  '<p id="items" data-event="hide">wait</p>',
+
+  // Hidden hints
+  '<p id="items" data-event="hide">...is the password...</p>',
+  '<p id="items" data-event="hide">66 67 68 69, first letter</p>'
 ];
 
 var randomQuotes = {};
