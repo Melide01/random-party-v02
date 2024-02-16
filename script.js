@@ -92,17 +92,18 @@ function updateCurrentPage() {
 
   if (fileName == "index.html") {
     changeIndexPage(0)
-    var adSRC = "assets/ads/";
+    // var adSRC = "assets/ads/";
     var randomAD = Math.floor(Math.random() * ads.length);
 
-    var newAD = adSRC + ads[randomAD];
-    var newImg = document.createElement("img");
-    newImg.src = newAD;
-    document.getElementById("ad-banner").appendChild(newImg);
+    // var newAD = adSRC + ads[randomAD];
+    var newDiv = document.createElement('div');
+    newDiv.innerHTML = ads[randomAD];
+
+    document.getElementById("ad-banner").appendChild(newDiv);
 
     if (randomAD == 0) {
-      newImg.style.cursor = "pointer";
-      newImg.addEventListener("click", function() {
+      newDiv.style.cursor = "pointer";
+      newDiv.addEventListener("click", function() {
         window.open('ads/melide-corp.html', '_self');
       });
     };
