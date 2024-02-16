@@ -47,6 +47,7 @@ var randomItems = [
   // Above is rare
   'vid_tiens-prend-ca.mp4',
   'audio_it-is-over.mp3',
+  
 
   '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
 
@@ -134,6 +135,9 @@ var randomItems = [
   'img_est-elle.PNG',
   'img_ff7.PNG',
   'img_guitar-plage.PNG',
+
+  '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/q9rv-Cq-gTM?si=tWoSnMggbpc3RPTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
+
   'img_hello.PNG',
   'img_huh.JPG',
   'img_jeu-video.PNG',
