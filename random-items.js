@@ -242,14 +242,15 @@ var randomItems = [
   'img_ytb-banner.PNG',
   'img_souvenir.JPG',
   'img_roi.PNG',
+  '<img id="items" data-event="hide" src="RandomFolder/images/hint0b.png">',
 
   // Last hints
-  '<p id="items" data-event="hide">wait</p>',
-  '<p id="items" data-event="hide">wait</p>',
+  '<video controls id="items" data-event="hide" src="RandomFolder/videos/hint0.mp4"></video>',
+  '<video controls id="items" data-event="hide" src="RandomFolder/videos/hint1.mp4"></video>',
 
   // Hidden hints
-  '<p id="items" data-event="hide">...is the password...</p>',
-  '<p id="items" data-event="hide">66 67 68 69, first letter</p>'
+  '<p id="items" data-event="hide">user = admin</p>',
+  '<p id="items" data-event="hide">password = admin</p>'
 ];
 
 var randomQuotes = {};
