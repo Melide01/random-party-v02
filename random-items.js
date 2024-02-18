@@ -1,52 +1,51 @@
 var randomItems = [
   '<a id="items" data-event="hide" onclick="finalGift()">Clique ici...</a>',
   '<input type="range" id="items" data-type="slider" data-event="hide" min="0" max="100" value="50" step="1">',
-  'Z',
-  'O',
-  'M',
-  'B',
-  'I',
+  'video_graveyard-pf-lovely-kittens.mp4',
+  'video_i-know-you-hate-me.mp4',
+  'video_talking-about-you.mp4',
+  'video_worthless.mp4',
 
+  'vid_final-meldup1.mp4',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
   '',
   '',
 
-  '',
-  '',
-  '',
-
-  '',
-  '',
-  '',
-  '',
-  '',
+  '<p id="items" data-event="none">keep going down</p>',
 
   // Here's the number 1
   '<a id="items" data-event="hide">Numba One BRAVO</a>',
   // Here's the number 1
 
   'vid_random-slider.mp4',
-  '<button id="items" class="btn" data-event="none" onclick="createRandomItem()">Appuie sur le bouton</button>',
-  
 
   'audio_umihi-nei.mp3',
+  'vid_failed-abore-me.mp4',
   'audio_moonmen-cover-2017.mp3',
-  'audio_time-like-these-2017.mp3',
+  'audio_ensorcele-cover.mp3',
   
-  'audio_dont-2019.mp3',
-  'audio_i-love-you-forever.mp3',
+  'vid_random-party-origins.mp4',
+  'vid_fuck-music-industry.mp4',
 
-  'vid_je-ne-t-aime-plus.MOV',
+  'vid_jcdvp-leak.mp4',
   'vid_evadls-leak.mp4',
 
-  
-  'vid_final-meldup1.mp4',
-  'vid_final-meldup2.mp4',
-  'vid_final-meldup3.mp4',
-  'vid_meldup-cashange.mp4',
+  '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/3GIWrLfq1po?si=a04sBCbQyze7ayl9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
+  '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/OvLl0whGBEI?si=llo1Fmekp37yV3m8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
+  'audio_t-a-tahiti.mp3',
+  '',
 
   // Above is rare
+  'audio_connard.mp3',
   'vid_tiens-prend-ca.mp4',
   'audio_it-is-over.mp3',
+  'audio_attention-transport-disaster.mp3',
   
 
   '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
@@ -57,39 +56,26 @@ var randomItems = [
   'vid_ebde-la-voitue.mp4',
   'vid_quand-t-arrives-sur-gta.mp4',
 
-  'vid_chanson-pour-toi.MOV',
+  
   'vid_code-pas-de-batterie.mp4',
-
-  'vid_failed-abore-me.mp4',
-  'vid_failed-animation.mp4',
-  'vid_failed-danganronpa.mp4',
-  'vid_failed-danganronpa-death.mp4',
-  'vid_failed-depressed-melide.mp4',
-  'vid_failed-depressed-melide-2.mp4',
-  'vid_failed-hyper-hype.mp4',
-  'vid_failed-just-a-dream.mp4',
-  'vid_failed-melide-skrillex.mp4',
-  'vid_failed-melody.mp4',
-  'vid_failed-pluie.mp4',
-  'vid_failed-script.mp4',
-  'vid_failed-video-game.mp4',
-  'vid_failed-visual-novel.mp4',
-  'vid_failed-worst-animations.mp4',
-  'audio_failed-vacances.mp3',
+  'vid_sous-la-lune.mp4',
+  
+  'audio_time-like-these-2017.mp3',
+  'audio_dont-2019.mp3',
 
   'audio_inner-disgust.mp3',
   'audio_j-ride-dans-un-monde-sans-danger.mp3',
   'audio_poly-phonk.mp3',
-  'audio_t-a-tahiti.mp3',
+  
   'audio_thanks-gold-version.mp3',
   'audio_thanks-old.mp3',
-  'audio_attention-transport-disaster.mp3',
+  
   'audio_bipbip-et-coyotte.mp3',
   'audio_cauchemart-de-nuit.mp3',
-  'audio_connard.mp3',
-  'audio_ensorcele-cover.mp3',
+  
+  'audio_i-love-you-forever.mp3',
 
-  'vid_fuck-music-industry.mp4',
+  'vid_meldup-cashange.mp4',
   'vid_invictus-melide.mp4',
   'vid_les-petits-poissons.mp4',
   'vid_melide-ncs.mp4',
@@ -98,10 +84,10 @@ var randomItems = [
   'vid_minecraft-idv-mod.mp4',
   'vid_moi-sur-osu.mp4',
   'vid_pvz-midi.mp4',
-  'vid_random-party-origins.mp4',
+  'vid_je-ne-t-aime-plus.MOV',
 
-  'vid_sous-la-lune.mp4',
-  'vid_stupid-ai',
+  
+  'vid_stupid-ai.mp4',
   'vid_video-horror-game-music.mp4',
   'vid_wsh-stromae.mp4',
   'vid_deez-nuts.mp4',
@@ -119,9 +105,14 @@ var randomItems = [
   'vid_compatibilite_PC_et_mobile.MP4',
   'vid_eiwa.MOV',
   
+  'vid_chanson-pour-toi.MOV',
+
+  'vid_final-meldup2.mp4',
+  'vid_final-meldup3.mp4',
+
   'vid_exclu-nul1.MOV',
   'vid_ia1.MOV',
-  'vid_jcdvp-leak.mp4',
+  
   
   'vid_like-pain.mp4',
   'vid_petite-video.mp4',
@@ -133,6 +124,22 @@ var randomItems = [
   'audio_processed_est-elle.mp3',
   'audio_processed-lady-melody.mp3',
   'audio_processed_la-seine.mp3',
+
+  'vid_failed-animation.mp4',
+  'vid_failed-danganronpa.mp4',
+  'vid_failed-danganronpa-death.mp4',
+  'vid_failed-depressed-melide.mp4',
+  'vid_failed-depressed-melide-2.mp4',
+  'vid_failed-hyper-hype.mp4',
+  'vid_failed-just-a-dream.mp4',
+  'vid_failed-melide-skrillex.mp4',
+  'vid_failed-melody.mp4',
+  'vid_failed-pluie.mp4',
+  'vid_failed-script.mp4',
+  'vid_failed-video-game.mp4',
+  'vid_failed-visual-novel.mp4',
+  'vid_failed-worst-animations.mp4',
+  'audio_failed-vacances.mp3',
 
   'img_aesthetic.jpg',
   'img_bg.jpg',
@@ -150,7 +157,6 @@ var randomItems = [
   'img_ff7.PNG',
   'img_guitar-plage.PNG',
 
-  '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/3GIWrLfq1po?si=a04sBCbQyze7ayl9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/8ySf6onNJ28?si=GIfqGH_h3ZPOCquz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/gwZJ1M1dQV4?si=BPjIcIaLyIlrYN4X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/iDGFV6r_Weo?si=kromQxNAjq6nP_io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
@@ -164,7 +170,9 @@ var randomItems = [
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/K7CzwZymf4w?si=f4iTdF5lBH36Qh8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/RuqgbWJ___g?si=Qth3WHOTABEFFmVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/Nv81QtAlQb8?si=EEJ5lsjykdmOmUl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
-  '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/OvLl0whGBEI?si=llo1Fmekp37yV3m8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
+  
+  
+  
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/wC9mKvSdN70?si=jneBsmIGNkhMJvbJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/ktN_6LdAVH8?si=2C-X-eh7433pwvMl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/bi5PFCAhdV4?si=SQ9C5Mi_QWPM6FCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
@@ -242,6 +250,7 @@ var randomItems = [
   'img_ytb-banner.PNG',
   'img_souvenir.JPG',
   'img_roi.PNG',
+  '<button id="items" class="btn" data-event="none" onclick="createRandomItem()">Appuie sur le bouton</button>',
   '<img id="items" data-event="hide" src="RandomFolder/images/hint0b.png">',
 
   // Last hints
