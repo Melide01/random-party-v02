@@ -1,10 +1,10 @@
 var randomItems = [
   '<a id="items" data-event="hide" onclick="finalGift()">Clique ici...</a>',
   '<input type="range" id="items" data-type="slider" data-event="hide" min="0" max="100" value="50" step="1">',
-  'video_graveyard-pf-lovely-kittens.mp4',
-  'video_i-know-you-hate-me.mp4',
-  'video_talking-about-you.mp4',
-  'video_worthless.mp4',
+  'vid_graveyard-of-lovely-kittens.mp4',
+  'vid_i-know-you-hate-me.mp4',
+  'vid_talking-about-you.mp4',
+  'vid_worthless.mp4',
 
   'vid_final-meldup1.mp4',
   '',
