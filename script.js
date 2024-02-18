@@ -376,7 +376,10 @@ function createRandomItem(index) {
 
 
     if ( finalIndex < 1 ) {
-      document.body.style.backgroundImage = 'url("assets/checkBoard.png")';
+      if (randomIndex > 0) {
+        document.body.style.backgroundImage = 'url("assets/brokenBG.gif")';
+      };
+      
 
       document.getElementById('displayRarity').textContent = 'BROKEN';
       document.getElementById('displayRarity').style.color = '#dd0000';
@@ -385,6 +388,8 @@ function createRandomItem(index) {
       numberRandomDisplay[1].style.color = '#dd0000';
     };
     if ( finalIndex >= 14) {
+      document.body.style.backgroundImage = 'url("assets/birthday-sparkle-common.gif")';
+
       document.getElementById('displayRarity').textContent = 'COMMON';
       document.getElementById('displayRarity').style.color = '#ddd';
       if ( finalIndex > ((randomItems.length - limitGift) - 2)) {
@@ -396,9 +401,13 @@ function createRandomItem(index) {
       }
 
     } else if ( finalIndex > 1) {
+      document.body.style.backgroundImage = 'url("assets/birthday-sparkle-darken.gif")';
+
       document.getElementById('displayRarity').textContent = 'RARE';
       document.getElementById('displayRarity').style.color = '#ffdd00';
     } else if ( finalIndex == 1 ) {
+      document.body.style.backgroundImage = 'url("assets/birthday-sparkle-darken.gif")';
+
       document.getElementById('displayRarity').textContent = 'SUPER-MEGA-RARE';
       document.getElementById('displayRarity').style.color = '#ffdd00';
     };
