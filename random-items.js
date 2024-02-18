@@ -31,8 +31,8 @@ var randomItems = [
   'audio_ensorcele-cover.mp3',
   
   'vid_random-party-origins.mp4',
-  'vid_fuck-music-industry.mp4',
-
+  
+  '',
   'vid_jcdvp-leak.mp4',
   'vid_evadls-leak.mp4',
 
@@ -49,6 +49,7 @@ var randomItems = [
   
 
   '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
+  'vid_fuck-music-industry.mp4',
 
   'vid_aurevoir-leak.mp4',
   'vid_background-speedrun.mp4',
