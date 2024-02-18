@@ -376,6 +376,8 @@ function createRandomItem(index) {
 
 
     if ( finalIndex < 1 ) {
+      document.body.style.backgroundImage = 'url("assets/checkBoard.png")';
+
       document.getElementById('displayRarity').textContent = 'BROKEN';
       document.getElementById('displayRarity').style.color = '#dd0000';
       
