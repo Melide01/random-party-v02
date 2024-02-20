@@ -263,7 +263,10 @@ var randomItems = [
   '<p id="items" data-event="hide">password = admin</p>'
 ];
 
-var randomQuotes = {};
+var randomQuotes = {
+  1: 'This is the number one',
+  2: 'This is number two'
+};
 
 var randomSongCover = {
   'processed_est-elle.mp3': 'help.png',

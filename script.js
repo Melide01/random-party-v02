@@ -255,9 +255,9 @@ function createRandomItem(index) {
   
   
   // Writes Notes dependent of RandomQuotes Array
-  if (randomQuotes[randomIndex] !== undefined) {
+  if (randomQuotes[randomIndex - (limitGift - 1)] !== undefined) {
     document.getElementById("quote-display").style.display = "flex";
-    document.getElementById("paper-note").textContent = randomQuotes[randomIndex];
+    document.getElementById("paper-note").textContent = randomQuotes[randomIndex - (limitGift - 1)];
   } else {
     document.getElementById("quote-display").style.display = "none";
   }
