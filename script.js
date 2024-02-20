@@ -456,7 +456,7 @@ function decorateRainbow() {
 
 function finalGift() {
   var gift = document.createElement('div');
-  gift.innerHTML = '<div class="gift" id="gift"><video controls src="RandomFolder/videos/finalGift0.mp4"></video></video></div>'
+  gift.innerHTML = '<div class="gift" id="gift"><video controls autoplay src="RandomFolder/videos/finalGift0.mp4"></video></video></div>'
   document.body.appendChild(gift);
 }
 
