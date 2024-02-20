@@ -30,16 +30,17 @@ var randomItems = [
   'audio_moonmen-cover-2017.mp3',
   'audio_ensorcele-cover.mp3',
   
-  'vid_random-party-origins.mp4',
+  'img_old-logo.png',
   
-  '',
+  'vid_avis-please.mp4',
   'vid_jcdvp-leak.mp4',
   'vid_evadls-leak.mp4',
+  'audio_t-a-tahiti.mp3',
 
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/3GIWrLfq1po?si=a04sBCbQyze7ayl9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/OvLl0whGBEI?si=llo1Fmekp37yV3m8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
-  'audio_t-a-tahiti.mp3',
-  '',
+
+  'vid_first-ever-edit.mp4',
 
   // Above is rare
   'audio_connard.mp3',
@@ -47,16 +48,19 @@ var randomItems = [
   'audio_it-is-over.mp3',
   'audio_attention-transport-disaster.mp3',
   
+  'img_old-self.png',
+  'img_old-self2.png',
 
   '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
   'vid_fuck-music-industry.mp4',
+  'img_new-logo.png',
 
   'vid_aurevoir-leak.mp4',
   'vid_background-speedrun.mp4',
   'vid_branleur.MOV',
   'vid_ebde-la-voitue.mp4',
   'vid_quand-t-arrives-sur-gta.mp4',
-
+  'vid_random-party-origins.mp4',
   
   'vid_code-pas-de-batterie.mp4',
   'vid_sous-la-lune.mp4',
@@ -87,6 +91,8 @@ var randomItems = [
   'vid_pvz-midi.mp4',
   'vid_je-ne-t-aime-plus.MOV',
 
+  'audio_pourquoi.mp3',
+  'audio_truth-dare-live-die.mp3',
   
   'vid_stupid-ai.mp4',
   'vid_video-horror-game-music.mp4',
@@ -120,11 +126,18 @@ var randomItems = [
   'vid_rudy-talent.MOV',
   
   'special_danganronpa/danganronpa.html',
+  'vid_timelapse-jonh.mp4',
 
   'audio_processed_happens-all-the-time.mp3',
   'audio_processed_est-elle.mp3',
   'audio_processed-lady-melody.mp3',
   'audio_processed_la-seine.mp3',
+
+  'img_w-gouter.JPG',
+
+  'audio_dubidubi.mp3',
+  'audio_mine-prod-super-clean.mp3',
+  'audio_philophobia.mp3',
 
   'vid_failed-animation.mp4',
   'vid_failed-danganronpa.mp4',
@@ -149,6 +162,7 @@ var randomItems = [
   'img_childhood-courtyard.PNG',
   'img_choco-milk.JPG',
   'img_concept-attd.PNG',
+  'img_fantasies.jpeg',
   'img_concept-lorange.jpg',
   'img_denji-et-moi.JPG',
   'img_dessin0.PNG',
