@@ -20,7 +20,7 @@ var randomItems = [
   '<p id="items" data-event="none">keep going down</p>',
 
   // Here's the number 1
-  '<a id="items" data-event="hide">Numba One BRAVO</a>',
+  '<div id="item"><img src="assets/numberOne.png" id="playButton" alt="Tas gagner"><audio id="audio" controls><source src="assets/musicOne.mp3" type="auudio/mpeg">Deso ya un bug screen et envoie moi en dm</audio></div>',
   // Here's the number 1
 
   'vid_random-slider.mp4',
