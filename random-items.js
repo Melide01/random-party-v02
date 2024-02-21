@@ -40,9 +40,10 @@ var randomItems = [
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/3GIWrLfq1po?si=a04sBCbQyze7ayl9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/OvLl0whGBEI?si=llo1Fmekp37yV3m8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
 
-  'vid_first-ever-edit.mp4',
+  'vid_firs-ever-edit.mp4',
 
   // Above is rare
+  
   'audio_connard.mp3',
   'vid_tiens-prend-ca.mp4',
   'audio_it-is-over.mp3',

@@ -211,8 +211,8 @@ function createRandomItem(index) {
   
 
   // Random Var
-  var randomIndex = (Math.floor(  Math.random()  *  (randomItems.length - 2 - parseFloat(specialGift) )) ) + parseFloat(specialGift);
-  
+  var randomIndex = (Math.floor(  Math.random()  *  (randomItems.length - 2 - 17 )) ) + 17;
+  console.log(randomIndex);
   // debug
   console.log(randomIndex + " then " + (randomIndex - limitGift + 1));
   console.log(document.getElementById(randomItems[randomIndex]));
@@ -330,9 +330,14 @@ function createRandomItem(index) {
     document.getElementById('playButton').addEventListener('click', function() {
       var audio = document.getElementById('specialAudio');
       if (audio.paused) {
+        if (audio.currentTime == audio.duration) {
+          audio.currentTime = 0;
+        };
         audio.play();
+        this.src = "assets/numberOne.png";
       } else {
         audio.pause();
+        this.src = "assets/pauseButton.png";
       }
     });
   }
