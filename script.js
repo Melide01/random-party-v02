@@ -326,7 +326,16 @@ function createRandomItem(index) {
   
   
   
-  
+  if (document.getElementById('playButton') !== null) {
+    document.getElementById('playButton').addEventListener('click', function() {
+      var audio = document.getElementById('specialAudio');
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    });
+  }
   
   
   
