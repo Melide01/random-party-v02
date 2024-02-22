@@ -22,6 +22,14 @@
       .specialDiv {
         display: flex; align-items: center; justify-content: center;
       }
+
+      #confettis{
+        position: fixed; top: 0;
+        z-index: -1;
+        width: 100%; height: 100%;
+        opacity: 0;
+        transition: all .2s;
+      }
     </style>
 
     <link rel="stylesheet" href="style.css"/>
@@ -31,6 +39,10 @@
     <script defer src="script.js" data-file-name="random-event.html"></script>
   </head>
   <body>
+    
+    <img id="confettis" src="assets/giftConfettis.gif">
+    
+    
     <div class="menu-bar" id="menu-bar">
       
       <img class="icon" id="icon" src="assets/icon-black.png" onclick="backHome()">

@@ -326,16 +326,20 @@ function createRandomItem(index) {
   
   
   
+  // Rare number 1 item !!
   if (document.getElementById('playButton') !== null) {
+    
     document.getElementById('playButton').addEventListener('click', function() {
       var audio = document.getElementById('specialAudio');
       if (audio.paused) {
         if (audio.currentTime == audio.duration) {
           audio.currentTime = 0;
         };
+        document.getElementById('confettis').style.opacity = 1;
         audio.play();
         this.src = "assets/numberOne.png";
       } else {
+        document.getElementById('confettis').style.opacity = 0;
         audio.pause();
         this.src = "assets/pauseButton.png";
       }
@@ -432,6 +436,7 @@ function createRandomItem(index) {
       document.getElementById('displayRarity').textContent = 'SUPER-MEGA-RARE';
       document.getElementById('displayRarity').style.fontSize = '40px';
       document.getElementById('displayRarity').style.color = '#ffdd00';
+      document.getElementById('confettis').style.opacity = 1;
     };
 
     document.getElementById("index-display-display").style.opacity = 1;
