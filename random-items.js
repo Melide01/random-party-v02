@@ -296,4 +296,19 @@ var randomSongCover = {
   'processed-lady-melody.mp3': 'help.png',
 
   'dessin-anijeu.mp3': 'dessin-anijeu-gif.gif',
+
+  'attention-transport-disaster.mp3':'attd.png',
+  'deck.mp3':'deck.png',
+  'dubidubi.mp3':'dubidubi.png',
+  'ensorcele-cover.mp3':'ensorcele.png',
+  'moonmen-cover-2017.mp3':'moonmen.png',
+  'thanks-old.mp3':'thanks.png',
+  'thanks-gold-version.mp3':'thanks.png',
+  'umihi-nei.mp3':'umihinei.png',
+
+  'bipbip-et-coyotte.mp3':'global-phonk.png',
+  'connard.mp3':'global-phonk.png',
+  'inner-disgust.mp3':'global-phonk.png',
+  'j-ride-dans-un-monde-sans-danger.mp3':'global-phonk.png',
+  'poly-phonk.mp3':'global-phonk.png',
 }
