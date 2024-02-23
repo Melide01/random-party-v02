@@ -286,7 +286,7 @@ var randomItems = [
 
   // Hidden hints
   '<p id="items" data-event="hide">user = admin</p>',
-  '<p id="items" data-event="hide">password = admin</p>'
+  '<p id="items" data-event="hide">password = nimda</p>'
 ];
 
 var randomQuotes = {
