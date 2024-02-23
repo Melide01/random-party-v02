@@ -63,7 +63,6 @@ function openRandomEvent() {
 function updateCurrentPage() {
   if (sessionStorage.getItem("specialGift") !== null) {
     specialGift = sessionStorage.getItem("specialGift");
-    console.log("has set: " + sessionStorage.getItem("specialGift"));
   }
   
 
@@ -201,7 +200,7 @@ function isHTMLElement(text) {
 
 
 
-var lastRandom = 0;
+var randomIndex = 0;
 
 function createRandomItem(index) {
   var normSpecialSlider = (randomItems.length - 1 - parseFloat(specialGift)) / 100;
@@ -211,11 +210,8 @@ function createRandomItem(index) {
   
 
   // Random Var
-  var randomIndex = (Math.floor(  Math.random()  *  (randomItems.length - 2 - 17 )) ) + 17;
-  console.log(randomIndex);
-  // debug
-  console.log(randomIndex + " then " + (randomIndex - limitGift + 1));
-  console.log(document.getElementById(randomItems[randomIndex]));
+  randomIndex = (Math.floor(  Math.random()  *  (randomItems.length - 2 - 17 )) ) + 17;
+
 
   if (index !== undefined) {
     randomIndex = Math.round(index) + limitGift;
@@ -356,8 +352,12 @@ function createRandomItem(index) {
     document.getElementById("random-button-div").style.display = "none";
   } else {
     document.getElementById("random-button-div").style.display = "flex";
-  }
+  };
   
+  // LAMOUR TOUJOURS
+  if ( (randomIndex - limitGift + 1) == 15) {
+    lamourToujours()
+  };
 
   // experiments slider 
   if (document.getElementById('items').dataset.type !== null) {
@@ -479,6 +479,22 @@ function finalGift() {
   document.body.appendChild(gift);
 }
 
+
+function lamourToujours() {
+  var currentTimeVideo = document.getElementById('items').currentTime;
+  if (currentTimeVideo > 16.3) {
+    document.body.style.backgroundImage = 'url("assets/gif-lamour-toujours.gif")'
+  } else {
+    document.body.style.backgroundImage = 'url("assets/birthday-sparkle-darken.gif")'
+  }
+
+  if ((randomIndex - limitGift + 1) == 15) {
+    requestAnimationFrame(lamourToujours);
+  } else {
+    return
+  };
+  
+}
 
 
 

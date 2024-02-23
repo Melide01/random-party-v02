@@ -44,6 +44,7 @@ var randomItems = [
 
   // Above is rare
   
+  'vid_exercice-lamour-toujours.mp4',
   'audio_moonmen-cover-2017.mp3',
   'audio_connard.mp3',
   'vid_tiens-prend-ca.mp4',
@@ -53,9 +54,10 @@ var randomItems = [
   'img_old-self.png',
   'img_old-self2.png',
 
-  '<img id="items" src="assets/silly-cat-holder.png" data-event="none">',
   'vid_fuck-music-industry.mp4',
   'img_new-logo.png',
+
+  '<iframe id="items" width="560" height="200px" src="https://www.youtube.com/embed/Nz-pRHDdfz8?si=eSdxBsfOGTSJhzly" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
 
   'vid_aurevoir-leak.mp4',
   'vid_background-speedrun.mp4',
