@@ -509,7 +509,7 @@ function lamourToujours() {
   if (currentTimeVideo == document.getElementById('items').duration) {
     if ( confet.style.opacity == 1 ) {
       document.getElementById('items').src = '';
-      finalGift('RandomFolder/videos/finalGift0.mp4');
+      finalGift('RandomFolder/videos/OMGITSJOHN.mp4');
     } else {
       createRandomItem();
     }

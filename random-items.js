@@ -98,7 +98,8 @@ var randomItems = [
 
   'audio_pourquoi.mp3',
   'audio_truth-dare-live-die.mp3',
-  
+  'img_safart.jpeg',
+
   'vid_stupid-ai.mp4',
   'vid_video-horror-game-music.mp4',
   'vid_wsh-stromae.mp4',
