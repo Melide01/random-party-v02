@@ -27,7 +27,7 @@ var randomItems = [
 
   'audio_umihi-nei.mp3',
   'vid_failed-abore-me.mp4',
-  'audio_moonmen-cover-2017.mp3',
+  'audio_deck.mp3',
   'audio_ensorcele-cover.mp3',
   
   'img_old-logo.png',
@@ -44,6 +44,7 @@ var randomItems = [
 
   // Above is rare
   
+  'audio_moonmen-cover-2017.mp3',
   'audio_connard.mp3',
   'vid_tiens-prend-ca.mp4',
   'audio_it-is-over.mp3',
@@ -155,6 +156,8 @@ var randomItems = [
   'vid_failed-visual-novel.mp4',
   'vid_failed-worst-animations.mp4',
   'audio_failed-vacances.mp3',
+
+  'audio_dessin-anijeu.mp3',
 
   'img_aesthetic.jpg',
   'img_bg.jpg',
@@ -288,4 +291,6 @@ var randomSongCover = {
   'processed_happens-all-the-time.mp3': 'help.png',
   'processed_la-seine.mp3': 'help.png',
   'processed-lady-melody.mp3': 'help.png',
+
+  'dessin-anijeu.mp3': 'dessin-anijeu-gif.gif',
 }
