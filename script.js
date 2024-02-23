@@ -361,7 +361,26 @@ function createRandomItem(index) {
   
   
   
-  
+  if (document.getElementById('imageSelector') !== null) {
+    document.getElementById('imageSelector').addEventListener('click', function() {
+      document.getElementById('imageInput').click();
+    });
+
+    document.getElementById('imageInput').addEventListener('change', function() {
+      var file = this.files[0];
+      if (file) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          var img = document.createElement('img');
+          img.classList.add('taPhoto');
+          img.src = e.target.result;
+          document.getElementById('items').innerHTML = '';
+          document.getElementById('items').appendChild(img);
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  }
   
   
   // Hides the RandomButton when DataEvent is called

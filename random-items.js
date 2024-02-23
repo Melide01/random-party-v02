@@ -11,7 +11,9 @@ var randomItems = [
   '<p id="items">met des confetis sur l amour toujours</p>',
   '<p id="items">regarde jusqu a la fin</p>',
   '<p id="items">pour recevoir un bon cadeau</p>',
-  '<p id="items"></p>',
+
+  '<div id="items"><a href="#" id="imageSelector">Inserer une image ici<input type="file" style="display: none;" id="imageInput" accept="image/*"></a></div>',
+
   '<p id="items"></p>',
   '<p id="items"></p>',
   '<p id="items"></p>',
