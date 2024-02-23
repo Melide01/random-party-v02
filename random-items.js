@@ -44,7 +44,7 @@ var randomItems = [
 
   // Above is rare
   
-  'vid_exercice-lamour-toujours.mp4',
+  '<video autoplay id="items" src="RandomFolder/videos/exercice-lamour-toujours.mp4"></video>',
   'audio_moonmen-cover-2017.mp3',
   'audio_connard.mp3',
   'vid_tiens-prend-ca.mp4',
@@ -218,7 +218,7 @@ var randomItems = [
   'img_les-potentiels-sons.jpg',
   'img_ma-chambre.jpg',
   'img_maman.jpg',
-  'img_mc-render',
+  'img_mc-render.JPG',
   'img_melide-render0.PNG',
   'img_melide-render1.PNG',
   'img_melide-render2.jpg',

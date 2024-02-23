@@ -39,8 +39,22 @@ function LerpColor(color1, color2, t, exp) {
   return (a << 24) | (r << 16) | (g << 8) | b;
 }
 
+var preloadedImages = {};
+function preloadImage(imageUrl) {
+  var img = new Image();
+  img.src = imageUrl;
 
-
+  preloadedImages[imageUrl] = img;
+}
+function unloadPreloadedImages() {
+  for (var imageUrl in preloadedImages) {
+    if (preloadedImages.hasOwnProperty(imageUrl)) {
+      preloadedImages[imageUrl].src = '';
+      preloadedImages[imageUrl] = null;
+      delete preloadedImages[imageUrl];
+    }
+  }
+}
 
 
 // Open Pages Functions
@@ -71,6 +85,7 @@ function updateCurrentPage() {
     document.body.style.backgroundColor = '#000';
     document.getElementById("menu-bar").style.backgroundColor = "#333";
 
+    preloadImage("assets/gif-lamour-toujours.gif");
     
 
     if (sessionStorage.getItem("specialGift") !== null) {
@@ -81,6 +96,8 @@ function updateCurrentPage() {
     } else {
       document.getElementById("specialGift").style.display = "flex";
     };
+  } else {
+    unloadPreloadedImages();
   }
   
   if (fileName == "melide-corp.html") {
@@ -486,6 +503,16 @@ function lamourToujours() {
     document.body.style.backgroundImage = 'url("assets/gif-lamour-toujours.gif")'
   } else {
     document.body.style.backgroundImage = 'url("assets/birthday-sparkle-darken.gif")'
+  }
+
+  const confet = document.getElementById('confettis');
+  if (currentTimeVideo == document.getElementById('items').duration) {
+    if ( confet.style.opacity == 1 ) {
+      console.log('MAIS WAH')
+    } else {
+      createRandomItem();
+    }
+    
   }
 
   if ((randomIndex - limitGift + 1) == 15) {
