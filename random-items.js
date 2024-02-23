@@ -297,6 +297,8 @@ var randomSongCover = {
 
   'dessin-anijeu.mp3': 'dessin-anijeu-gif.gif',
 
+  't-a-tahiti.mp3': 't-a-tahiti.png',
+  
   'attention-transport-disaster.mp3':'attd.png',
   'deck.mp3':'deck.png',
   'dubidubi.mp3':'dubidubi.png',
