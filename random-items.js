@@ -1,5 +1,5 @@
 var randomItems = [
-  '<a id="items" data-event="hide" onclick="finalGift()">Clique ici...</a>',
+  '<a id="items" data-event="hide" onclick="finalGift(\'RandomFolder/videos/finalGift0.mp4\')">Clique ici...</a>',
   '<input type="range" id="items" data-type="slider" data-event="hide" min="0" max="100" value="50" step="1">',
   'vid_graveyard-of-lovely-kittens.mp4',
   'vid_i-know-you-hate-me.mp4',
@@ -15,8 +15,8 @@ var randomItems = [
   '<p id="items"></p>',
   '<p id="items"></p>',
   '<p id="items"></p>',
-  '<p id="items"></p>',
-  '<p id="items"></p>',
+  '',
+  'vid_loop-conffetis.mp4',
 
   '<p id="items" data-event="none">keep going down</p>',
 
@@ -140,6 +140,8 @@ var randomItems = [
 
   'img_w-gouter.JPG',
 
+  'vid_casha-drop.mp4',
+
   'audio_dubidubi.mp3',
   'audio_mine-prod-super-clean.mp3',
   'audio_philophobia.mp3',
@@ -178,6 +180,8 @@ var randomItems = [
   'img_est-elle.PNG',
   'img_ff7.PNG',
   'img_guitar-plage.PNG',
+
+  'vid_perdu.mp4',
 
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/8ySf6onNJ28?si=GIfqGH_h3ZPOCquz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',
   '<div id="items" data-event="none"><iframe width="560" height="200px" src="https://www.youtube.com/embed/gwZJ1M1dQV4?si=BPjIcIaLyIlrYN4X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>',

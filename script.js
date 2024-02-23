@@ -490,9 +490,9 @@ function decorateRainbow() {
 }
 
 
-function finalGift() {
+function finalGift(inputSrc) {
   var gift = document.createElement('div');
-  gift.innerHTML = '<div class="gift" id="gift"><video controls autoplay src="RandomFolder/videos/finalGift0.mp4"></video></video></div>'
+  gift.innerHTML = '<div class="gift" id="gift"><video autoplay src="' + inputSrc + '"></video></video></div>'
   document.body.appendChild(gift);
 }
 
@@ -509,7 +509,7 @@ function lamourToujours() {
   if (currentTimeVideo == document.getElementById('items').duration) {
     if ( confet.style.opacity == 1 ) {
       document.getElementById('items').src = '';
-      console.log('MAIS WAH')
+      finalGift('RandomFolder/videos/finalGift0.mp4');
     } else {
       createRandomItem();
     }
