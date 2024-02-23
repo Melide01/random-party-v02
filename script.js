@@ -425,7 +425,7 @@ function createRandomItem(index) {
       numberRandomDisplay[0].style.color = '#dd0000';
       numberRandomDisplay[1].style.color = '#dd0000';
     };
-    if ( finalIndex > 14) {
+    if ( finalIndex > 15) {
       document.body.style.backgroundImage = 'url("assets/birthday-sparkle-darken.gif")';
 
       
