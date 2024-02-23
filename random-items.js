@@ -7,15 +7,16 @@ var randomItems = [
   'vid_worthless.mp4',
 
   'vid_final-meldup1.mp4',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
+
+  '<p id="items">met des confetis sur l amour toujours</p>',
+  '<p id="items">regarde jusqu a la fin</p>',
+  '<p id="items">pour recevoir un bon cadeau</p>',
+  '<p id="items"></p>',
+  '<p id="items"></p>',
+  '<p id="items"></p>',
+  '<p id="items"></p>',
+  '<p id="items"></p>',
+  '<p id="items"></p>',
 
   '<p id="items" data-event="none">keep going down</p>',
 

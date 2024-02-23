@@ -30,7 +30,6 @@ function updateDialog() {
     currentIndex += 1;
 
     currentDialogIndex = currentArray[currentIndex];
-    console.log(currentDialogIndex);
 
     // Updates the engine
     if (currentDialogIndex !== undefined) {
@@ -54,7 +53,6 @@ function updateDialog() {
 
         if (currentDialogIndex['character'] !== undefined) {
             document.getElementById("dangan-character").src = currentName + '/' + currentName + currentDialogIndex['character'] + '.png';
-            console.log(currentName + '/' + currentName + currentDialogIndex['character'] + '.png');
         };
         
         

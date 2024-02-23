@@ -508,6 +508,7 @@ function lamourToujours() {
   const confet = document.getElementById('confettis');
   if (currentTimeVideo == document.getElementById('items').duration) {
     if ( confet.style.opacity == 1 ) {
+      document.getElementById('items').src = '';
       console.log('MAIS WAH')
     } else {
       createRandomItem();
