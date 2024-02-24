@@ -86,7 +86,6 @@ function updateCurrentPage() {
     document.getElementById("menu-bar").style.backgroundColor = "#333";
 
     preloadImage("assets/gif-lamour-toujours.gif");
-    
 
     if (sessionStorage.getItem("specialGift") !== null) {
       specialGift = sessionStorage.getItem("specialGift");
@@ -96,10 +95,23 @@ function updateCurrentPage() {
     } else {
       document.getElementById("specialGift").style.display = "flex";
     };
+
+    if (parseFloat(specialGift) < 100) {
+      createRandomItem();
+    } else {
+      // SECRET ENDING
+      finalGift('assets/blue-screen-subasacaraib.MP4');
+    }
+
   } else {
     unloadPreloadedImages();
   }
   
+
+
+
+
+
   if (fileName == "melide-corp.html") {
     hideLogoOrNot();
     checkLogin();
@@ -110,7 +122,10 @@ function updateCurrentPage() {
     changeIndexPage(0)
     // var adSRC = "assets/ads/";
     var randomAD = Math.floor(Math.random() * ads.length);
-
+    var firstChance = Math.floor(Math.random()*4);
+    if (firstChance == 0) {
+      randomAD = 0;
+    };
     // var newAD = adSRC + ads[randomAD];
     var newDiv = document.createElement('div');
     newDiv.innerHTML = ads[randomAD];
@@ -122,7 +137,12 @@ function updateCurrentPage() {
       newDiv.addEventListener("click", function() {
         window.open('ads/melide-corp.html', '_self');
       });
-    };
+    } else if (randomAD == 1) {
+      newDiv.style.cursor = "pointer";
+      newDiv.addEventListener("click", function() {
+        window.open('https://linktr.ee/Melide', '_blank');
+      });
+    }
 
     var closeButton = document.getElementById("ad-close-btn");
 
@@ -136,7 +156,7 @@ function updateCurrentPage() {
   }
   
   if (fileName == "random-event.html") {
-    createRandomItem();
+    
   }
 }
 
@@ -528,7 +548,7 @@ function lamourToujours() {
   if (currentTimeVideo == document.getElementById('items').duration) {
     if ( confet.style.opacity == 1 ) {
       document.getElementById('items').src = '';
-      finalGift('RandomFolder/videos/OMGITSJOHN.mp4');
+      finalGift('RandomFolder/videos/melide.mp4');
     } else {
       createRandomItem();
     }

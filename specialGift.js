@@ -12,7 +12,7 @@ function eventGift() {
         console.log(randomItems.length);
         newIndex = randomItems.length - limitGift - 1;
         createRandomItem(newIndex);
-        document.getElementById("inputGift").value = randomItems.length;
+        document.getElementById("inputGift").value = randomItems.length - limitGift;
       };
     };
   } else {
@@ -25,7 +25,7 @@ function eventGift() {
         console.log(randomItems.length);
         newIndex = randomItems.length - limitGift - 1;
         createRandomItem(newIndex);
-        document.getElementById("inputGift").value = randomItems.length;
+        document.getElementById("inputGift").value = randomItems.length - limitGift;
       };
     };
   }
