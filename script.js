@@ -100,7 +100,7 @@ function updateCurrentPage() {
       createRandomItem();
     } else {
       // SECRET ENDING
-      finalGift('assets/blue-screen-subasacaraib.MP4');
+      finalGift('assets/zombiu.mp4');
     }
 
   } else {
