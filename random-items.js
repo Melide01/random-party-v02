@@ -16,7 +16,7 @@ var randomItems = [
 
   '<p id="items"></p>',
   '<p id="items"></p>',
-  '<p id="items"></p>',
+  '<a id="items" href="RandomFolder/specials/others/NougatinePackfromMelide-curated.zip" download="NougatinePackfromMelide-curated.zip">telecharger le sample pack Nougatine!</a>',
   '',
   'vid_loop-conffetis.mp4',
 
