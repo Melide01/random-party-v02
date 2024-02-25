@@ -1,6 +1,6 @@
 var key = {
     'admin': ['nimda', 1],
-    'john': ['74NK-9ou', 2],
+    'john': ['7h4NK 9ou', 2],
     '': ['hell', 999]
 }
 
