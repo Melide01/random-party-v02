@@ -100,7 +100,7 @@ function updateCurrentPage() {
       createRandomItem();
     } else {
       // SECRET ENDING
-      finalGift('assets/zombiu.mp4');
+      finalGift('RandomFolder/videos/zombiu.mp4');
     }
 
   } else {
