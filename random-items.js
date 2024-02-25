@@ -47,7 +47,7 @@ var randomItems = [
 
   // Above is rare
   
-  '<video autoplay id="items" src="RandomFolder/videos/exercice-lamour-toujours.mp4"></video>',
+  '<video controls autoplay id="items" src="RandomFolder/videos/exercice-lamour-toujours.mp4"></video>',
   'audio_moonmen-cover-2017.mp3',
   'audio_connard.mp3',
   'vid_tiens-prend-ca.mp4',
