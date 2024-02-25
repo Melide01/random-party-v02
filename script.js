@@ -531,7 +531,7 @@ function decorateRainbow() {
 
 function finalGift(inputSrc) {
   var gift = document.createElement('div');
-  gift.innerHTML = '<div class="gift" id="gift"><video controls src="' + inputSrc + '"></video></video></div>'
+  gift.innerHTML = '<div class="gift" id="gift"><video autoplay src="' + inputSrc + '"></video></video></div>'
   document.body.appendChild(gift);
 }
 
